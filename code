@@ -4,6 +4,7 @@ editing my func
 }
 void dharshini()
 {
+ printf("Hai,I am Dharshini");
 }
 void vaishali()
 {
