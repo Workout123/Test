@@ -1,0 +1,56 @@
+body
+{
+	background-color : lightblue;
+}
+#tp
+{
+	background-color : #F038EF;
+}
+#nme
+{
+	border-style: ridge;
+   	padding-top: 20px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 100px;
+	width : 200px;
+	height : 400px;
+	border : 2px solid peach;
+	margin: 25px;
+}
+button
+{
+	background-color: peach;
+	border: none;
+	outline: none;
+	height: 25px;
+	width: 60px;
+	padding: 5px 2px;
+}
+#puthere
+{
+	border-style: dotted;
+	width:600px;
+	height:400px;
+	position: static;
+	float:right;
+	border-color: #8B008B;
+	margin: -500px 100px;
+	padding: 25px;
+	
+
+}
+@keyframes ex
+{
+	from {background-color : #ff80ff;}
+	to{background-color: #ffe6ff;}
+}
+#end
+{
+	color: #ff80aa;
+	animation-name:ex;
+	animation-duration:4s;
+	background-color:#ffe6ff;
+	font-family: "Times new Roman";
+	font-style: italic;
+}
