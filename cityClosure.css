@@ -1,0 +1,48 @@
+#leftside{
+
+	width: 20%;
+	height: 550px;
+	background-color: pink;
+	padding-right: 65px;
+	float: left;
+}
+
+#header{
+	width: 100%;
+	height: 10%;
+	font-family: times new roman;
+	color: black;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+.buttonS {
+   background-color: transparent;
+   outline: none;
+   border: none;
+   color: black;
+   padding: 20px 20px;
+   text-align: center;
+   display: inline-block;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+#rightside{
+
+	width: 70%;
+	height: 550px;
+	background-color: yellow;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+	padding-top: 180px;
+	padding-left: 40px;
+	padding-right: 20px;
+	float:right;
+}
