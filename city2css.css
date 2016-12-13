@@ -32,11 +32,11 @@ button
 	border-style: dotted;
 	width:600px;
 	height:400px;
-	position: static;
+	position: relative;
 	float:right;
 	border-color: #8B008B;
 	margin: -500px 100px;
-	padding: 25px;
+//	padding: 25px;
 	
 
 }
