@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+var para="";
+myarray=["apple","bat","cat"];
+myarray[myarray.length]="dog";
+for(var i=0;i<myarray.length;i+=1)
+{
+para=para+myarray[i];
+document.write("\n");
+document.write(myarray[i]);
+}
+<p id="demo"> </p>
+document.getElementById("demo").innerHTML=para;
+</script>
+</body>
+</html>
+
+

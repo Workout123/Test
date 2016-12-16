@@ -7,22 +7,43 @@ function show_description(i)
 {
   function inner_print()
   {
+     var start=new Date();
+      var curtime="Starttime:"+start.getHours()+":"+start.getMinutes()+":"+start.getSeconds()+":"+start.getMilliseconds();
+      console.log("button click:"+curtime);
+      var list=[];
+      for(var j=0;j<100000000;j++)
+      {
+        list[j]=j;
+      }
      document.getElementById("text").innerHTML=description[i];
      document.getElementById("text").style.top=position[i] + 'px';
+      var end=new Date();
+      var curtime="Endtime:"+end.getHours()+":"+end.getMinutes()+":"+end.getSeconds()+":"+end.getMilliseconds();
+      console.log("button click:"+curtime);
   }
+
   return inner_print;
 }
 
 function move_object() 
 {
-  var val = 10;
+  var val = 0;
   var object = document.getElementById("object");    
   function inner_move() 
   {
-    var stop = setInterval(call, 10);
+    var start=new Date();
+  var starttime="Starttime:"+start.getHours()+":"+start.getMinutes()+":"+start.getSeconds()+":"+start.getMilliseconds();
+  console.log("Move start:"+starttime);
+    var stop = setInterval(call, 20);
     function call()
-    {
-      if (val == 800)
+    { 
+      var current=new Date();
+      var currenttime="Starttime:"+current.getHours()+":"+current.getMinutes()+":"+current.getSeconds()+":"+current.getMilliseconds();
+      console.log("Move current:"+currenttime);
+      var lag=(current.getTime()-start.getTime());
+      console.log("lag:"+lag+"current:"+current.getTime()+"start:"+start.getTime());
+      console.log("Value each time:"+val);
+      if (val >= 800)
       {
       clearTimeout(stop);
       }
@@ -31,6 +52,12 @@ function move_object()
       val++; 
       object.style.left = val + 'px';  
       }
+      if (val<(lag/20)) 
+      {
+        val+=((lag/20)-val);
+        object.style.left = val + 'px';
+        console.log("value changed:"+val);
+      } 
     }
   }
   return inner_move;
