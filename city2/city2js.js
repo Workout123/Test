@@ -1,5 +1,5 @@
 (
-function()
+function() 
 {
 	var clist={};
 	clist["london"] = {des: "Welcome to Visit London , your official city guide to London, England. Find things to do in London, days out in London, London attractions and sightseeing, what's on, London events, theatre, tours, restaurants and hotels in London. Plan your trip to London with useful traveller information.",
