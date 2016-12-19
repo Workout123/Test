@@ -1,34 +1,61 @@
 (function(){
-  function create_button()
+  function move()
   {
-    var buttons=0;
-    var stop=setInterval(split_task,10);
-  function split_task()
+    var b=document.getElementsByClassName("button");
+    var j=0;
+    function inner_move()
+    {
+      if(j<b.length)
+      { 
+        $(b[j]).animate({left: "500px"},"slow",inner_move);
+        j++;
+      }
+      //setTimeout(inner_move,0);
+    }
+    return inner_move;
+  }
+  function add_event()
   {
-    if(buttons>1000)
-      clearInterval(stop);
-    var start=new Date();
-    var curtime="Starttime:"+start.getHours()+":"+start.getMinutes()+":"+start.getSeconds()+":"+start.getMilliseconds();
-    console.log(curtime);
-  for(var i=0;i<100;i++)
+    button.addEventListener("click",move());
+  }
+  function animate_button()
   {
     var button = document.createElement("button");
-    button.setAttribute("class","button");
-    button.innerHTML = buttons;
+    button.setAttribute("id","button");
+    button.innerHTML = "click here";
     var body=document.getElementById("button_column"); 
     body.appendChild(button);
     var linebreak = document.createElement("br");
     body.appendChild(linebreak);
-    button.addEventListener(function(){animate();});
-    buttons++;
   }
-      var end=new Date();
-      var curtime="Endtime:"+end.getHours()+":"+end.getMinutes()+":"+end.getSeconds()+":"+end.getMilliseconds();
-      console.log(curtime);
-  }
-  $("button").click(function(){
-    $("button").animate({height: "300px"});
-});
+  function create_button()
+  {
+    var buttons=0;   
+    function split_task()
+    {
+      if(buttons>=500)
+      {
+        clearTimeout(stop);
+      }
+      else
+      {
+        for(var i=0;i<100;i++)
+        { 
+          var button = document.createElement("button");
+          button.setAttribute("class","button");
+          button.innerHTML = buttons;
+          var body=document.getElementById("button_column"); 
+          body.appendChild(button);
+          var linebreak = document.createElement("br");
+          body.appendChild(linebreak);
+          buttons++;
+        }
+      }
+      var stop=setTimeout(split_task,0); 
+    }
+  split_task();
 }
+animate_button();
 create_button();
+add_event();
 })();
