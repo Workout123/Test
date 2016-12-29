@@ -1,0 +1,10 @@
+#print{
+	float:right;
+	height: 50px;
+	width: 1000px;
+	background-color: lightpink;
+}
+#dropdown{
+	width: 100px;
+	height: 30px;
+}
