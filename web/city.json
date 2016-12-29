@@ -1,0 +1,18 @@
+{
+  "itemgs": [
+    {
+      "key": "Chennai",
+      "value": "this is chennai"
+    },{
+      "key": "Delhi",
+      "value": "this is Delhi"
+    },{
+      "key": "Bombay",
+      "value": "this is Bombay"
+    },{
+      "key": "Bangalore",
+      "value": "this is Bangalore"
+    }
+  ]
+}
+
