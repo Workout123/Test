@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-ng-app="testApp">
+<head>
+	<center> <h1 id = "header"> CITY </h1>  </center>
+	<title>Angular City</title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">></script> 
+</head>
+<body>
+	<div class = "container" ng-controller = "printCity">
+		<select ng-model="selectCity" ng-options="x.key for x in cities" > 
+			<option value="">Select City</option>  
+		</select>
+		<center> {{ selectCity.value }} </center>
+	</div>
+	<script>
+		var test = angular.module("testApp",[]);
+		test.controller("printCity",printCity);
+		function printCity($scope, $http){
+
+			$http.get('http://localhost/test/city.json').success(function(data){;
+				$scope.cities = data.itemgs;
+			});
+   		}
+   	</script>
+</body>
+</html>
+
