@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<div ng-app='CityList'>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+			<script src="cityjs.js"></script>
+			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+			<center ng-controller='ListCtrl'>
+				Choose your city : 
+				<select ng-model="namelist" ng-change="giveDescp()" >
+					<option ng-repeat="city in citylist " value="{{city}}"> {{city}} </option>
+				</select>
+				<p ng-model="citydescp">{{citydescp}}</p>
+			</center>	
+
+		</div>
+	</body>
+</html>
