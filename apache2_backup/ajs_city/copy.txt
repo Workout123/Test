@@ -1,0 +1,100 @@
+var app=angular.module('CityList',[]);
+
+var controllers={};
+controllers.ListCtrl=function($scope,$http,$cacheFactory)
+						{
+								$http.get("http://localhost/json_files/citylist.json").then(function (response) {
+     											$scope.citylist = response.data.cities;
+ 												});
+
+								var mycache=$cacheFactory('mycache');
+								$scope.giveDescp=function()
+											{																		
+												var cachedata=mycache.get($scope.namelist);
+												if(!cachedata)
+												{
+													$http.get("http://localhost/json_files/"+$scope.namelist+".json").then(
+														function (response) {
+															console.log("Not in cache so adding it");
+															mycache.put($scope.namelist,response.data.descp);
+															$scope.citydescp=mycache.get($scope.namelist);
+ 															});		
+ 												}		
+ 												$scope.citydescp=mycache.get($scope.namelist);
+
+											}
+ 						};
+ app.controller(controllers);
+
+
+
+ //another
+
+ var app=angular.module('CityList',[]);
+
+app.factory('GetDataFromFile', function($http) {
+	return{
+	getdata : function(url)
+	{
+		console.log("url : "+url);
+		return $http.get(url);	
+	}
+   //return promise;
+}
+}); 
+
+ app.service('RetrieveDescp',function($http,$cacheFactory,GetDataFromFile){
+ 		var mycache=$cacheFactory('mycache');
+ 	//	var dummy={};	
+ 		return {
+ 			retDescp:function(cityname)
+											{		
+																																							;
+												var cachedata=mycache.get(cityname);
+												if(!cachedata)
+												{
+													console.log("in if");
+													var url="http://localhost/json_files/"+cityname+".json";
+													GetDataFromFile.getdata(url).success(
+														function (response) {
+																console.log("Not in cache so adding it");
+																console.log("rsp: "+response.descp);
+																mycache.put(cityname,response.descp);
+																return response.descp;
+ 															}
+ 															);
+ 												}	
+ 												else
+ 												{	
+ 												console.log("called");
+ 												return mycache.get(cityname);
+ 												}
+ 												
+
+											}
+			}
+		//return dummy;
+ });
+var controllers={};
+controllers.ListCtrl=function($scope,$http,RetrieveDescp)
+						{
+								$http.get("http://localhost/json_files/citylist.json").then(function (response) {
+     											$scope.citylist = response.data.cities;
+ 												});								
+								
+								$scope.giveDescp=function()
+											{
+												// $scope.citydescp=RetrieveDescp.retDescp($scope.namelist);
+												console.log ("retrive fn"+ RetrieveDescp.retDescp($scope.namelist));
+
+												// RetrieveDescp.retDescp($scope.namelist).success(
+												// 	function (response)
+												// 	{
+												// 		console.log(response);
+												// 		//	console.log(response.descp);
+												// 	});
+												// console.log("Aftr retreival: "+$scope.citydescp);												
+
+											}
+ 						};
+ app.controller(controllers);
