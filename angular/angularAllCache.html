@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html data-ng-app="testApp">
+<head>
+	<center> <h1 id = "header"> CITY ALL CACHE Pro</h1>  </center>
+	<title>Angular City</title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">></script> 
+	 <script src="cityPromise.js"></script>
+</head>
+<body>
+	<div class = "container" ng-controller = "printCity">
+		<select ng-model="selectCity" ng-options="x for x in cities" ng-change = "getValue()"> 
+			<option value="">Select City</option>  
+		</select>
+		<center> {{results}} </center>
+	</div>
+</body>
+</html>
+

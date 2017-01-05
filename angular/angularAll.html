@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html data-ng-app="testApp">
+<head>
+	<center> <h1 id = "header"> CITY ALL </h1>  </center>
+	<title>Angular City</title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">></script> 
+</head>
+<body>
+	<div class = "container" ng-controller = "printCity">
+		<select ng-model="selectCity" ng-options="x for x in cities" ng-change = "getValue()"> 
+			<option value="">Select City</option>  
+		</select>
+		<center> {{cityDesc}} </center>
+	</div>
+	<script>
+		var test = angular.module("testApp",[]);
+		test.controller("printCity",printCity);
+		function printCity($scope, $http){
+
+			$http.get('http://localhost/test/allCity.json').success(function(data){;
+				$scope.cities = data.items;
+			});
+
+			$scope.getValue = function(){
+				console.log("in getValue");
+				var file = "http://localhost/test/"+$scope.selectCity+".json";
+				console.log(file);
+				$scope.cityDesc="   uuu    ";
+				$http.get(file).success(function(data){
+					$scope.cityDesc = data.desc;
+				});
+			}
+
+   		}
+   	</script>
+</body>
+</html>
+
