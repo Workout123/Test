@@ -1,0 +1,136 @@
+CSS
+----
+
+http://learnlayout.com/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS ----> Demos are here
+
+http://www.adam-bray.com/blog/ ----> Mobile Friendly
+
+http://learn.shayhowe.com/advanced-html-css/responsive-web-design/ ---------> responsive web design
+
+http://www.cssbasics.com/ ------> Basics
+
+
+NOTES
+-------------
+basics
+margin-tblr: len /per/auto
+padding-tblr: len / per
+
+text:
+	color:name/#999/rgb()
+	letter-spacing:normal/size
+	word-spacing
+	text-align:l/r/centre/justified
+	text-decoration
+	text-indent
+	text-transform
+
+a:link {color: #009900;}
+a:visited {color: #999999;}
+a:hover {color: #333333;}
+a:focus {color: #333333;}
+a:active {color: #009900;}
+
+#div a:link{} (only div a's)
+a:first-[line,letter]
+
+background
+background-color
+background-attachment:fixed/scroll
+		  -image
+		  -repeat:repeat
+
+border:1px solid #333
+border-[size,style,color]
+border-[tblr]
+
+list-style
+
+height
+[max,min]-
+line-height
+width
+[max,min]-width
+
+
+float
+clear
+clip:rect(,,,)
+cursor:crosshair,help
+
+overflow:hidden,scroll
+visibility:hidden,visible
+
+z-index
+
+
+
+-------------
+LAYOUT
+	display 
+		block (div,header,form)
+		inline(a)
+		none
+		list-item
+		inline-block
+
+	margin <size> auto	(left and right margin)
+
+	width <size>
+	max-width <size> Responsive with max width.Duh!
+	padding (adds to the size of the div)
+	border-width
+	box-sizing: border-box;(dosnt change the boz size) 	
+
+	position
+		static
+		relative (to norm postn)
+			same as static unless some other attrr are specified
+			top: -20px;
+  			left: 20px;
+  		fixed -to the viewport/screem=n	
+  		absolute (relative to the parent)
+
+  	float
+  		 left	
+  		 right
+  	clear
+  		left/right
+  		(Usually accompanied with float	)	 
+  	overflow: auto
+  	
+  	>for responsive.
+  	@media screen and (min-width:30opx)
+  	{}
+
+  	inline-block
+		  	nav {
+		  display: inline-block;
+		  vertical-align: top;
+		  width: 25%;
+		}
+		.column {
+		  display: inline-block;
+		  vertical-align: top;
+		  width: 75%;
+	}
+	column-count
+	column-gap (-webkit- -moz-)
+
+
+	FLEXBOX
+	container:
+		display:flex
+	child divs:
+		flex :initial
+		flex:none
+		flex:1
+		flex :2
+
+		width:
+		min-width:
+
+		align-items:centre
+		justify-content:centre

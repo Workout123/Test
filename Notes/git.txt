@@ -1,0 +1,100 @@
+Git Links
+---------
+
+https://try.github.io/levels/1/challenges/1  ----> Learn Visually
+
+https://www.git-tower.com/learn/git/ebook/en/command-line/introduction ----> Git Book
+
+https://www.atlassian.com/git/tutorials/
+
+http://pcottle.github.io/learnGitBranching/ ----------> Learn Visually
+
+
+
+
+Notes
+--------
+git init
+git status
+git add
+
+git remote add origin 
+
+---------------------------
+
+git commit 
+git branch <brname>
+git checkout <brname> 
+	
+	git checkout -b <bn>
+
+git merge <bn>
+git rebase <bn> // the head branch will be child of BN
+git rebase <pn> <cn>
+
+git checkout hash
+git checkout HEAD^
+			 HEAD~5
+			 HEAD~
+			 HEAD^2
+
+
+git reset
+get revert			 	
+
+git cherry-pick C1 C2 ..
+git rebase -i HEAD~n
+
+git branch -f master Hash
+
+
+git tag V0 C1
+git describe branch
+
+
+
+-------------------------------
+
+Remote
+
+Git clone
+
+git fetch
+git merge origin/master
+
+	$git pull
+
+GIT PUSH
+	this wont work sometimes,due to inconsistent history
+	so
+	git fetch
+	git merge / rebase origin/master
+
+	else for rebase
+
+		$git pull --rebase; git push
+
+	else for merging
+
+	$git pull;git push
+
+
+Remote tracking
+1
+	git checkout -b totallyNotMaster o/master
+
+	eg:
+		git checkout -b foo o/master; git pull
+		instead of master foo will be tracking o/master and at pull the foo branch will be merged with fetched content.
+2
+	git branch -u o/master foo
+	git branch -u o/master (if foo is checked)
+
+
+
+git push <remote> <place>
+git push origin master
+git push origin src:dest	
+
+same to fetch
+		pull	
