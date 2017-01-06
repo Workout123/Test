@@ -1,0 +1,39 @@
+<html>
+	<body>
+		<div ng-app='CityList'>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+			<script src="city_rest_js.js"></script>
+			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+			<center ng-controller='ListCtrl'>
+				Choose your city : 
+				<select ng-model="namelist" ng-change="giveDescp()" >
+					<option ng-repeat="city in citylist " value="{{city}}"> {{city}} </option>
+				</select>
+				<br/><br/>
+				<table id="mytable" style="display:none" border="3" cellpadding="3" cellspacing="3"  width="1000px" border-collapse= "collapse">
+					<tr >
+						<td>Description</td>
+						<td ng-model="citydescp">{{citydescp}}</td>
+					</tr>
+					<tr>
+						<td>Restaurants</td>
+						<td>
+							<table border="0" cellpadding="1" cellspacing="1" width="500px">
+								<tr ng-repeat= "place in restaurants">
+									<td>{{place.names}}</td>
+									<td>{{place.ratings}}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					
+				</table>
+				<br/><br/>
+				
+				<citydirective name="{{namelist}}"></citydirective>
+	
+			</center>	
+		</div>
+	</body>
+</html>

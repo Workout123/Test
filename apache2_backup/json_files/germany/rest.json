@@ -1,0 +1,10 @@
+{
+	"restaurants":
+					[
+						{"names":"vendome","ratings":"*****"},
+						{"names":"Aqua","ratings":"****"},
+						{"names":"Auerbachs keller","ratings":"**"}
+					]
+}
+
+
