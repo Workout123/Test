@@ -1,0 +1,219 @@
+Javascript
+------------
+
+https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics
+
+https://www.codementor.io/learn-javascript-online
+
+http://javascriptissexy.com/how-to-learn-javascript-properly/
+
+http://www.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript
+
+
+
+Jquery
+-------
+
+https://learn.jquery.com/
+
+http://www.jquery-tutorial.net/
+
+
+
+
+
+JS notes
+----------
+
+TUTORIAL VIDS
+=============
+
+General concepts
+
+	Funtional programing lang - lisp
+
+	Prototypal ingeritance -objects inherit from objects
+==============================
+NUMBER-String-Object-boolean-undefined-null
+Number - 8B double precision float
+	MATH bject -abs,floor,random
+	Nunber("")
+		
+	parseInt("",radix)
+	unary plus +"32" =32
+String- sting of 16 bit ucs-2
+	String()	
+Boolean
+	Boolean(Truthy,falsy)
+		FALSY-NAN ,FALSE,0,"",null,undefined
+		truthy-"0","false"
+	=======================	
+
+Dynamic Objects	
+
+- Unification of object and hashtable
+- new Object() creates an empty container of key value pairs.
+
+operator
+	== != supports type coercion
+	=== !== does proper Comparison
+
+	&& guard || default
+	a && b => return b if a is truty
+	a || b => return a if a is truthy
+
+===============
+statements
+	labelled break
+		loop:for()	
+
+	for name in Object{
+		if(Object.hasOwnProperty(name)){
+
+		}
+	}	
+
+	throw new Error(reason)
+
+	throw{	
+		name:	ExName
+		message: reason
+	}
+
+
+	try{
+		..
+	}
+	catch(e){
+		switch(e.name){}
+	}
+	
+	#has only funtion scope
+
+=====================
+Object 
+ 	var obj ={"name":value,"":val}	 (literal{})
+ 	new Object();
+ 	//object(Object.prototype)// doesnt support
+ 	function object(o)
+ 	{
+ 		function F(){}
+ 		F.prototype = o;
+ 		return new F(); 
+ 	}
+
+
+ 	Linkage
+ 		var newobj = object(oldobj
+
+ 		the child object inherits parents content. It also copies the dynamic state of the parent.
+
+ 		All objects inherit from Object.prototype. Which has some default methods like hasOwnProperty
+
+ 		Objects are passed(as args) by reference
+
+ 		=== checks by refs not by value
+
+ 		delete myObj[name];
+ 	
+ 	Prototype
+ 		All objs injerit from a prototype
+
+ 		if not specified then Object.prototype	
+
+====================
+Array
+	array inherits from Object
+
+	Arrays unlike objects have length member 	
+
+	concat,join,pop,push,slice,splice
+
+	[] literal
+
+	mylist[mylist.length] = newitem;
+
+	delete mylist[1] //numberiing still exists
+
+	mylist.splice(1,1)
+	no Dot notation	
+
+	How to know if an obj is an array
+		value.constructor === Array
+		value instanceof Array
+===========================
+===========================
+Functions 
+	also an object
+
+	Function stored in an object is Method
+
+	Closures
+		A closure is a function having access to the parent scope, even after the parent function has closed.
+
+		var add = (function(){
+			var counter = 0;
+			return function(){ return counter+=1;}
+		})();
+
+	Invocation	
+		function form
+			funname()
+				this will ref the global obj
+				vas that=this; for helper functions
+		method form
+			obj.method()
+				this refers to obj
+		Constructor form
+			new fun()
+			new obj is formed, this refers to new obj
+
+	arguments parameter -array-like				
+
+=====================================
+
+DOM
+
+	image.src= value
+
+	image.getAttribute()
+	image.setAttribute(,)
+
+	node.className
+
+	node.style.stylename
+
+	node.currentStyle.stylename	Only IE
+
+	document.defaultView().
+	    getComputedStyle(node, "").
+	    getPropertyValue(stylename);
+
+===================================
+	document.createElement(tagName)
+
+	document.createTextNode(text)
+
+	node.cloneNode()
+	Clone an individual element.
+
+	node.cloneNode(true)
+	Clone an element and all of its descendents.    
+
+
+	node.appendChild(new)
+
+	node.insertBefore(new, sibling)
+
+	node.replaceChild(new, old)
+
+		old.parentNode.replaceChild(new, old)
+
+	node.removechild
+	''''''''
+
+	Microsoft
+	node.attachEvent("on" + type, f);
+
+	W3C
+	node.addEventListener(type, f, false)
