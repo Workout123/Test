@@ -7,6 +7,13 @@ Exercises
 	# use closure property as much as possible
 	
 2 Js - DOM - Dropdown 
-	# change 1 to store cities in a dropdown menu with a single button
+	# make cities as buttons
 	# an image slider below that
+	
+3 setTimeout
+	#introduce delay during city button click
+	#make the image move to position it must have been without any delay.
+
+4 Use self calling functions
+
 	
