@@ -16,14 +16,25 @@ Notes
 --------
 git init
 git status
+git status -p
 git add
 
 git remote add origin 
+
+git stash
+git stash pop
+git stash apply stname
+
+git log
+git log bname
+
 
 ---------------------------
 
 git commit 
 git branch <brname>
+	-v
+	-va
 git checkout <brname> 
 	
 	git checkout -b <bn>
@@ -32,7 +43,7 @@ git merge <bn>
 git rebase <bn> // the head branch will be child of BN
 git rebase <pn> <cn>
 
-git checkout hash
+git checkout hashval
 git checkout HEAD^
 			 HEAD~5
 			 HEAD~
@@ -45,7 +56,9 @@ get revert
 git cherry-pick C1 C2 ..
 git rebase -i HEAD~n
 
-git branch -f master Hash
+git branch -f bn Hash //move branches around
+git branch -d bn   //delete
+git branch -dr origin/bn //remote delete
 
 
 git tag V0 C1
@@ -57,7 +70,7 @@ git describe branch
 
 Remote
 
-Git clone
+Git clone  link.git
 
 git fetch
 git merge origin/master
@@ -78,6 +91,8 @@ GIT PUSH
 
 	$git pull;git push
 
+New branch from a remote repo
+	git checkout --track origin/branch
 
 Remote tracking
 1
@@ -94,6 +109,7 @@ Remote tracking
 
 git push <remote> <place>
 git push origin master
+git push -u origin branch // establish tracking
 git push origin src:dest	
 
 same to fetch

@@ -1,0 +1,70 @@
+All Api
+
+----------------------------------------
+
+https://docs.angularjs.org/api
+
+controllers
+------------------------------------------
+
+http://www.undefinednull.com/2014/07/07/practical-guide-to-prelink-postlink-and-controller-methods-of-angular-directives/
+
+http://www.dotnet-tricks.com/Tutorial/angularjs/HM0L291214-Understanding-$emit,-$broadcast-and-$on-in-AngularJS.html
+
+scope
+-------------------------------------------
+
+https://github.com/angular/angular.js/wiki/Understanding-Scopes
+
+https://docs.angularjs.org/guide/scope
+
+
+views
+------------------------------------------
+https://github.com/angular-ui/ui-router/wiki/Nested-States-and-Nested-Views
+
+https://github.com/angular-ui/ui-router/wiki/Multiple-Named-Views
+
+Communication between directives
+-----------------------------------------
+http://blog.dudak.me/2014/angular-js-directive-communication-guide-part-1/
+
+http://blog.dudak.me/2014/angular-js-directive-communication-guide-part-2/
+
+
+Restangular
+-------------------------------------------
+
+https://github.com/mgonto/restangular
+
+
+states
+
+-------------------------------------------
+
+https://github.com/angular-ui/ui-router/wiki
+
+
+Promises
+------------------------------------------
+http://markdalgleish.com/2013/06/using-promises-in-angularjs-views/
+
+http://www.dwmkerr.com/promises-in-angularjs-the-definitive-guide/
+
+
+
+Others
+-------
+
+
+http://viralpatel.net/blogs/category/javascript/angularjs/
+
+https://scotch.io/tutorials/single-page-apps-with-angularjs-routing-and-templating     -------> Single Page Application	
+
+http://www.funnyant.com/angularjs-ui-router/
+
+https://github.com/angular/angular.js/wiki/Understanding-Scopes         ----------> Understanding Scopes
+
+http://www.undefinednull.com/2014/02/11/mastering-the-scope-of-a-directive-in-angularjs/   ---------> Directive Scope
+
+https://github.com/mgonto/restangular   ----------> To Understanding restangular

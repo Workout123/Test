@@ -1,0 +1,12 @@
+Ruby On Rails
+-------------
+
+1) Ruby Beginners Guide: http://ruby-doc.org/docs/ProgrammingRuby/ 
+
+2) For a "Really" quick start: http://www.ruby-lang.org/en/documentation/quickstart/ 
+
+3)  For varied links to documentation stuff: http://www.ruby-lang.org/en/documentation/ 
+
+4) Rails guide:: http://guides.rubyonrails.org/v2.3.8/getting_started.html
+
+5) For Quickly Learn: http://railsforzombies.org/ 
