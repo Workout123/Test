@@ -25,13 +25,21 @@ git stash
 git stash pop
 git stash apply stname
 
-git log
+git log           /// commit history
 git log bname
+git log -p
 
+git diff
+git diff --staged
+git diff master..contact-form
+git diff 0023cdd..fcd6199
 
 ---------------------------
 
 git commit 
+git commit --amend -m "This is the correct message"
+
+
 git branch <brname>
 	-v
 	-va
@@ -51,7 +59,8 @@ git checkout HEAD^
 
 
 git reset
-get revert			 	
+get revert
+git merge --abort		 	
 
 git cherry-pick C1 C2 ..
 git rebase -i HEAD~n
@@ -114,3 +123,55 @@ git push origin src:dest
 
 same to fetch
 		pull	
+
+=============================
+Changes
+
+git commit --amend -m "This is the correct message"
+git checkout HEAD file/to/restore.ext
+git reset --hard HEAD
+
+git revert 2b504be  // creates a new commit undoing the last commit
+git reset --hard 2be18d9
+git reset --keep 2be18d9 // local change preserved
+
+git merge --abort
+
+
+=====================
+sub module
+	inside lib/
+	git submodule add https://github.com/djyde/ToProgress
+
+when cloning a new repo with subm,the subm wont be cloned along with it, just a reference to remote URL will be added.
+WE have to manually add
+	
+	git clone --recurse-submodules
+	inside lib
+	git submodule update --init --recursive
+
+To select a commit as working copy in the submod ////we dont checkout branches here,rather specific commits
+	$ cd lib/submod/
+	$ git log --oneline --decorate	
+	$ git checkout 0.1.1
+
+git submodule status
+
+to update the revision status to that of the remote
+	 git submodule update lib/ToProgress	
+
+
+$ git submodule deinit lib/ToProgress
+$ git rm lib/ToPogress	 
+===========================
+
+Git Flow
+	git flow init
+	git flow feature start rss-feed
+	git flow feature help
+	git flow feature finish rss-feed
+
+	git flow release start 1.1.5
+	git flow release finish 1.1.5
+
+	git flow hotfix start missing-link
