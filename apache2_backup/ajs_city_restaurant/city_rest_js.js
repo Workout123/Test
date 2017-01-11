@@ -4,13 +4,13 @@ app.factory('GetDataFromFile', function($http) {
 	return{
 	getdata : function(url)
 	{
-		console.log("url received to factory: "+url);
+		//console.log("url received to factory: "+url);
 		return $http.get(url);	
 	}
     }
 });
 
-app.service('CachingService',['$http','$cacheFactory','GetDataFromFile','$q',function($http,$cacheFactory,GetDataFromFile,$q){
+app.service('CachingService',function($http,$cacheFactory,GetDataFromFile,$q){
  		var mycache=$cacheFactory('mycache');
  		this.findMe= function(key)
  					{ 	
@@ -39,7 +39,7 @@ app.service('CachingService',['$http','$cacheFactory','GetDataFromFile','$q',fun
 
 							findFromFactory(url).then(function(data)
 							{
-									console.log("Not in cache so adding it");
+									console.log("Not in cache so adding key: "+key);
 									mycache.put(key,data);
 									def.resolve(data);							
 							});			
@@ -47,7 +47,7 @@ app.service('CachingService',['$http','$cacheFactory','GetDataFromFile','$q',fun
 						return def.promise;	
 					}
 		
- } ]); 
+ } ); 
 var controllers={};
 
 controllers.ListCtrl= function($scope,CachingService,$q)
@@ -58,7 +58,7 @@ controllers.ListCtrl= function($scope,CachingService,$q)
 									}
 								);							
 
-							$scope.giveDescp = function()
+						/*	$scope.giveDescp = function()
 												{
 													$("#mytable").css('display','table');
 														var choosedCity=$scope.namelist;
@@ -70,7 +70,7 @@ controllers.ListCtrl= function($scope,CachingService,$q)
 																	$scope.citydescp=data[0].descp;
 																	$scope.restaurants=data[1].restaurants;
 															});
-												}
+												}*/
 
 						}
 app.controller(controllers);
@@ -79,14 +79,14 @@ app.directive("citydirective",function($q,CachingService)
 	{
 	return{
 			restrict:'EA',
-			template:'<table border="3" cellpadding="3" cellspacing="3"  width="1000px" border-collapse= "collapse"><tr><td>Description</td><td ng-model="citydescps">{{citydescps}}</td></tr><tr><td>Restaurants</td><td><table border="0" cellpadding="1" cellspacing="1" width="500px"><tr ng-repeat= "places in restaurant"><td>{{places.names}}</td><td>{{places.ratings}}</td></tr></table></td></tr></table>',
+			template:'<table><tr><td>Description</td><td ng-model="citydescps">{{citydescps}}</td></tr><tr><td>Restaurants</td><td><table><tr ng-repeat= "places in restaurant"><td>{{places.names}}</td><td>{{places.ratings}}</td></tr></table></td></tr></table>',
 			scope:{cityname:'@name'},
 			link: 
 
 				function(scope,element,attrs)
 					{						
 						scope.$watch('cityname',function(choosedCity){
-						console.log("new val :"+choosedCity);
+						//console.log("new val :"+choosedCity);
 						var file1=choosedCity+"/"+choosedCity;
 						var file2=choosedCity+"/rest";
 					    $q.all([CachingService.findMe(file1),CachingService.findMe(file2)])

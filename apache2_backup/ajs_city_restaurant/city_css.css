@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    background: linear-gradient(to bottom right, #115B94, #DEA5F3);
+    text-shadow:  2px 5px 5px #EC56BF;
+
+ }
+.listpart{
+	border-radius: 15px 40px;
+    background: #A5C7F3;
+	width:		25%;
+	position: relative;
+	float: left;
+	right: : 30px;
+	padding: 15px;
+	border : 1px solid #22C8E9;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nondirective,.directivepart{
+	border-radius: 15px 40px 30px;
+	 background: #F3C0F3;
+	width:		75%;
+	position:  relative;
+	float: left;	
+	padding: 10px;
+	border : 1px solid #ED97E2;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+table{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	padding: 3px;
+	border-spacing: 5px;
+	border: 1px solid #B8EFF3;
+	width:100%;
+}
+
+
+@media all and (max-width:400px)
+{
+	.listpart	{width: 100%;}
+	.directivepart	{width: 100%;}
+}
+ 	
