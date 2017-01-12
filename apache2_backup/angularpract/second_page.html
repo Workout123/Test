@@ -1,0 +1,285 @@
+<!--Egg Head Io video 12- basic Behaviours
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="behaviourApp">
+<div ng-app="behaviourApp">
+  <div enter leave>I'm content!</div>
+</div>
+<script>
+  var app=angular.module('behaviourApp', []);
+    app.directive("enter", function(){
+      return function(scope, element){
+        element.bind("mouseenter", function(){
+          console.log("Im inside of you");
+        })
+      }
+    })
+    app.directive("leave", function(){
+      return function(scope, element){
+        element.bind("mouseleave", function(){
+          console.log("Im leaving u");
+        })
+      }
+    })
+  
+</script>
+</body>
+</html>
+-->
+<!--Egg Head IO 13- Useful Behaviours
+<html>
+<head>
+    <link rel="stylesheet" href="vendor/foundation/foundation.min.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="behaviourApp">
+<div ng-app="behaviourApp">
+  <div enter="panel" leave>I'm content!</div>
+</div>
+<script>
+  var app=angular.module('behaviourApp', []);
+    app.directive("enter", function(){
+      return function(scope, element, attrs){
+        element.bind("mouseenter", function(){
+          element.addClass(attrs.enter);
+        })
+      }
+    })
+    app.directive("leave", function(){
+      return function(scope, element, attrs){
+        element.bind("mouseleave", function(){
+          element.removeClass(attrs.enter);
+        })
+      }
+    })
+  
+</script>
+</body>
+</html>
+-->
+<!--Egg Head IO 14- Directive talkin to controllers
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div  ng-app="twitterApp">
+  <div ng-controller="AppCtrl">
+    <div enter="loadMoreTweets()">Roll over to load more tweets</div>
+  </div>
+</div>
+<script>
+  var app=angular.module('twitterApp', []);
+    app.directive("enter", function(){
+      return function(scope, element, attrs){
+        
+        element.bind("mouseenter",function(){
+          scope.$apply(attrs.enter);
+        })
+
+        element.bind("mouseleave",function(){
+          scope.$apply("deleteMoreTweets()");
+        })
+
+        }
+      })
+
+   app.controller("AppCtrl", function ($scope){
+    
+    $scope.loadMoreTweets = function () {
+      alert("Loading Twets!");
+    }
+  
+  $scope.deleteMoreTweets = function () {
+      alert("Deleting Twets!");
+    }
+
+
+   })
+</script>
+</body>
+</html>
+-->
+<!--Egg Head IO 15- Directive to Directive Communiication
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div  ng-app="twitterApp">
+  <superhero flight speed strength>Super man</superhero><br/>
+  <superhero speed>Speed</superhero>
+</div>
+<script>
+  var app=angular.module('twitterApp', []);
+  app.directive("superhero", function(){
+      return {
+        restrict: "E",
+
+        scope:{},
+
+        controller: function($scope){
+          $scope.abilities = []
+          
+          this.addStrength = function(){
+            $scope.abilities.push("strength")
+          }
+
+          this.addSpeed = function(){
+            $scope.abilities.push("speed")
+          }
+
+          this.addFlight = function(){
+            $scope.abilities.push("flight")
+          }
+        },
+
+        link: function(scope,element){
+            element.addClass("button");
+
+          element.bind("mouseenter",function(){
+            console.log(scope.abilities);
+          })
+        }
+      }
+    });
+
+  app.directive("strength", function(){
+    return{
+
+        require: "superhero",
+
+        link: function(scope, element, attrs, superCtrl){
+          superCtrl.addStrength();
+        }
+    }
+  });
+
+  app.directive("speed", function(){
+    return{
+        require: "superhero",
+        link: function(scope, element, attrs, superCtrl){
+          superCtrl.addSpeed();
+        }
+    }
+  });
+
+  app.directive("flight", function(){
+    return{
+        require: "superhero",
+        link: function(scope, element, attrs, superCtrl){
+          superCtrl.addFlight();
+        }
+    }
+  });
+</script>
+</body>
+</html>
+-->
+<!--Egg Head IO 16- Understanding isolate scope
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="twitterApp">
+<div  ng-controller="choreCtrl">
+  <kid done="logChore(task)"></kid>
+</div>
+<script>
+  var app=angular.module('twitterApp', []);
+  app.controller("choreCtrl", function($scope){
+    $scope.logChore = function(chore){
+      alert(chore+ "is done!");
+    }
+  })
+  app.directive("kid", function(){
+    return{
+      restrict: "E",
+      scope:{
+        done:"="
+      },
+      template: '<input type="text" ng-model="chore">'+
+                '{{chore}}'+
+                '<div class="button" ng-click="done({task:chore})">Chore done</div>'
+    }
+  });
+</script>
+</body>
+</html>
+ -->
+ <!--Egg Head IO 21- Transclusion Basics
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="phoneApp">
+<div  ng-controller="choreCtrl">
+  <panel><input type="button" value="Hi">jffugh</panel>
+</div>
+<script>
+  var app=angular.module('phoneApp', []);
+  app.controller("choreCtrl", function($scope){
+    
+  })
+  app.directive("panel", function(){
+    return{
+      restrict: "E",
+      transclude: true,
+      template: '<div class="panel">This is a panel</div><div >hi</div><ng-transclude></ng-transclude>'
+    }
+  });
+</script>
+</body>
+</html>
+-->
+<!--Egg Head IO 22- Another approach to controller
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="phoneApp">
+<div  ng-controller="choreCtrl">
+  <div ng-mouseover="choreCtrl.sayHi()">Click Me</div>
+</div>
+<script>
+  var app=angular.module('phoneApp', []);
+  app.controller("choreCtrl", function($scope){
+      this.sayHi = function(){
+            alert("hi");
+      }
+ return $scope.choreCtrl= this;
+  })
+</script>
+</body>
+</html>
+-->
+<!-- Testing directive self-->
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="phoneApp">
+<div  ng-controller="choreCtrl">
+
+  <input type="text" ng-model="ctrltxt"/>{{ctrltxt}}
+ 
+  <enter me="ctrltxt">click me {{ctrltxt}}</enter>
+</div>
+<script>
+  var app=angular.module('phoneApp', []);
+  app.controller("choreCtrl", function($scope){
+
+      $scope.sayHi = function(){
+            console.log("hi");
+      }
+  });
+
+  app.directive("enter",function(){
+    return{
+       restrict: 'AE',
+      scope: {
+                ctrl1: '=me'
+              },
+      template: '<p style="background-color:{{ctrl1}}">Hello World <br/><input type="text" ng-model="ctrl1"/>{{ctrl1}}',
+      link: function(scope, elem, attrs) {
+
+              elem.bind('click', function() {
+                // scope.ctrl1="red";
+                  console.log("Link can access parent scope : "+scope.ctrl1);
+                //  scope.ctrl1="yellow";
+               // scope.$apply("sayHi()");
+               // console.log("done");
+            })
+          }
+      };
+  });
+</script>
+</body>
+</html>
