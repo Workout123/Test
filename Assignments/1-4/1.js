@@ -1,7 +1,5 @@
 
-window.onload = init;
-
-function init()
+(function init ()
 {
 	var body = document.getElementsByTagName("BODY")[0];
 	var cities = {
@@ -31,11 +29,11 @@ function init()
 			var but = document.createElement("input");
 			but.setAttribute("type", "button");
 			but.setAttribute("value", "CLICK");
+			//but.setAttribute("city",city);
 			but.addEventListener("click",function(e){
 				e = e || event;
 				var target = e.target || e.srcElement;
 				console.log(cities	[target.previousSibling.innerHTML]);
-				
 				desc.innerHTML = cities[target.previousSibling.innerHTML];
 				target.parentNode.appendChild(desc);
 			},false);			
@@ -44,12 +42,5 @@ function init()
 			div.appendChild(but);
 		}
 	}
-}
+})();
 
-function func(e)
-{	
-	e = e || event;
-	var target = e.target || e.srcElement;
-	console.log(target.previousSibling.value);
-	
-}	

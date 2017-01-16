@@ -1,4 +1,4 @@
-
+	
 window.onload = init;
 var timer;
 
@@ -84,9 +84,7 @@ function init()
 }
 function warp(e)
 {	
-	
-	e = e || event;
-	var target = e.target || e.srcElement;	
+		
 	var ds = document.getElementById("deathstar");
 	var tstamp = Math.floor(Date.now());
 	function start()
