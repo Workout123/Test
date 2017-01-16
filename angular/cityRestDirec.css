@@ -1,0 +1,18 @@
+table,th,td{
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 45%;
+}
+
+.col{
+	float:left;
+	margin: 1% 1% 1% 1%;
+	height: 50%;
+	background-color: yellow;
+	border-left: 6px solid #ff9999;
+	width: 47%;
+}
+
+@media all and (max-width: 480px){
+	.col{width: 100%;}
+}

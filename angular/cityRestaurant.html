@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-ng-app="testApp">
+<head>
+	<center> <h1 id = "header"> CITY RES CACHE DIR</h1>  </center>
+	<title>Angular City</title>
+	<link rel="stylesheet" type="text/css" href="cityRestDirec.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">></script> 
+	<script src="cityRestDirec.js"></script>
+</head>
+<body>
+	<div ng-controller = "printCity">
+		<div class = "col">
+			<select ng-model="selectCity" ng-options="x for x in cities" ng-change = "getValue()"> 
+				<option value="">Select City</option>  
+			</select>
+			<center> {{results}} </center>
+		</div>
+		<div class = "col">
+			<table>
+				<tr><th>Name </th><th>Rank</th></tr>
+			</table>  
+			<my-city ng-repeat = "hotel in restaurant" city-data = "hotel"/>
+		</div>
+	</div>
+</body>
+</html>
+
