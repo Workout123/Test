@@ -3,7 +3,7 @@ https://learn.jquery.com/
 
 http://www.jquery-tutorial.net/
 
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 =================================================================
 						Jquery
 =================================================================

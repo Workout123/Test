@@ -26,7 +26,7 @@ JS notes
 ----------
 
 TUTORIAL VIDS
-=============
+=======================================================
 
 General concepts
 
@@ -222,4 +222,44 @@ DOM
 
 	var event = new CustomEvent("anim");
 	target.nextSibling.dispatchEvent(event);
+
+=========================================================================================================================
+=========================================================================================================================
+ADVANCED JS
+
+	CLassical OO
+	Protoyypal OO
+
+	Prototypal oo
+		object(proto)
+	But it is
+		PseudoPrototyple
+			Constructor
+			new operator
+			proto menmber
+			---
+			function Constructor()
+			{
+				this.member = intialzer;
+			}
+			Constructor.prototype.firstMethod= function{};
+
+			var newObj = new constructor();
+			//return Constructor.prototype
+			---		
+			newObj.method("first_meth",fun(a,by){})
+			---	
+			To simultate classical inheritance
+
+				function BigConstructor(){};
+
+				BigConstructor.prototype = new BiggerConstructor
+
+	Prototypal
+	function object(o){
+		function F(){}
+		F.prototype = o;
+		return new F();
+
+	}			
 

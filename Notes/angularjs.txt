@@ -68,3 +68,96 @@ https://github.com/angular/angular.js/wiki/Understanding-Scopes         --------
 http://www.undefinednull.com/2014/02/11/mastering-the-scope-of-a-directive-in-angularjs/   ---------> Directive Scope
 
 https://github.com/mgonto/restangular   ----------> To Understanding restangular
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------
+=====================================================
+AngularJS 
+Spa -single page application
+
+Directives:
+ng-app
+	data-ng-app=""
+
+ng-model="name"
+	{{name	}}		
+
+ng-init="names=[,,,]"
+ng-repeat="name in names"
+	{{name}}
+
+ng-coontroller
+ng-click="fun()"
+ng-view =
+
+FIlters"
+	ng-model="cust in customers | filter:name | orderBy:'city'"
+	{{cust.name | uppercase}}
+---------------------------
+
+Viev-----{scope /ViewModel} --------controller
+
+Module -->config--->routes------>View      ---->Directives
+							|--->Controller --->Factories	
+
+
+angular.module("demoApp",['helperModule']);													
+----------------------------
+ng-app="demoApp"
+ng-controller="simpleCtrl"
+1
+
+	<script>
+		function simpleCtrl($scope){$scope.customer=[{},..]}	
+
+2
+	var demoApp = angular.module("demoApp",['helperModule']);
+	demoApp.controller("simpleCtrl",function($scope){});
+
+3	
+	controller={  } //obj contain controller functions
+ 	demoApp.controller(controllers);
+-----------------------------------
+Routes
+	var demoApp = angular.module("demoApp",[]);
+
+	demoApp.config(function($routeProvider){
+		$routeProvider
+			.when("/",
+				{
+					controller: 'SimpleController',
+					templateURL: 'View.html'
+				})
+			.when("/partial2:idparam",
+				{
+					/..
+				})
+			.otherwise({redirect:"/"});		
+			
+	});
+-----------------
+
+Factories (also Service-Provider)
+	var demoApp = angular.module("demoApp",[])
+	.config()
+	.factory('SimpleFactory',function(){
+		var factory ={};
+		var customers =[....]
+		factory.getCustomers = function(){
+			return customers;
+		}
+		return factory;
+	})
+	.controller("SimpleController",function($scope,Simplefactory){
+		$scope.customers = Simplefactory.getCustomers()''
+	});
+
+Service
+	insteaf of factory obj,use this 	
