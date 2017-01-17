@@ -1,0 +1,24 @@
+
+table{
+	border-collapse: collapse;
+	width: 200px;
+}
+#head{
+	background-color: #ffe6e6;
+	height: 50px;
+	margin: 1% 1% 1% 1%;
+	border-left: 6px solid #ff9999;
+	width: 95%;
+}
+.col{
+	float:left;
+	margin: 1% 1% 1% 1%;
+	height: 200px;
+	background-color: #ffe6e6 ;
+	border-left: 6px solid #ff9999;
+	width: 46%;
+}
+@media only screen and (max-width: 500px) {
+	.col { width: 100%; }
+	#head{ width: 100% }
+}
