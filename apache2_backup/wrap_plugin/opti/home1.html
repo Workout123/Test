@@ -1,0 +1,36 @@
+<html>
+  <head>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://localhost/wrap_plugin/responsiveslides.min.js"></script>
+    <script src="custom1.js"></script>
+
+  </head>
+<body>
+
+<link href="http://localhost/wrap_plugin/slider.css" rel="stylesheet" type="text/css" /> 
+
+<div ng-app="ImgSlider">
+  <div ng-controller="ImgCtrl">
+      <table>
+        <tr ng-repeat="imgs in imgarray">
+          <td class="thumbview">
+            <input type="checkbox" ng-click="toggleSelection(imgs)">
+                  <img ng-src="{{imgs}}"/>
+            </input>
+          </td>
+        </tr>
+      </table>
+
+      <br/><br/>Dynamic dire<br/>  
+        <label>Curent slide number: {{currslide}}</label>
+      <br/><br/>
+     <imgslidedynamic imgsc="selection" disp="whenSlideChange">HI</imgslidedynamic>
+
+  </div>
+</div>
+
+</body>
+
+</html>
