@@ -1,8 +1,13 @@
 .rslides img
 {
-  height: 500px;
-  width:  700px;
+  height: 300px;
+  width:  500px;
 }
 .rslides,.rslides1{
-	margin: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;}
+
+.thumbview img
+{
+  height: 50px;
+  width:  70px;
 }
