@@ -163,16 +163,129 @@ Service
 	insteaf of factory obj,use this 	
 
 --------------------------------------------
-Custom directive
-	app-directive()	
 
+fILTERS
+app.filters("reverse"function(data){
+	return function(text){
+		return text.split("").reverse().join("");data.message();
+	}
+})
 
+CUSTOM dIRECTIVES
 
+app.directive("superman",function({
+	return {
+		restrict : "E",   //E-element A-attr M -comment C-class
+		template : "<div>"Son of Krypton"</div>"
+	}	
+}))
+
+app.directive("super",function(){
+	return {
+		restrict : "A", //deffault
+		link : function(){
+
+		}
+	}
+})
+
+class= "super"
+app.directive("superClass",function(){
+	return {
+		restrict : "C",
+		link : function(){
+
+		}
+	}
+})
+
+---------
+BEHAVIOURs
+
+app.directive("enter", function(){
+	return {
+		//default A
+		link: function(){
+
+		}
+	}
+})
+or 
+app.directive("enter",funtion(){
+	return funtion(scope , element ,attrs){
+		element.bind("mouseenter",function(){
+			element.addClass(attrs.enter);
+			element.removeClass("panel");
+		})
+	}	
+})
+----------
+Interaction BEtween Directives
+app.directive("superman",function(){
+	reurn {
+		restrict : "E",
+		scope :{},
+		controller : function($scope){
+			this.ability=[];
+			this.addSpeed = function(){
+				ability.push("speed");
+			}
+		}
+		link: function("enter",function(scope,element,attrs){
+			...
+		})
+	}
+})
+app.directive("speed",function(){
+	return {
+		require:"superman"
+		link: function(scope,element,attrs,superctrl){
+			superctrl.addSpeed()
+		}
+	}
+})
+<superman speed></superman>
+--------------
+Scope
+app.directive("kid",function(){
+	return {
+		restrict  : "E",
+		scope : {
+			done:"&" //expression
+			treat:"@" //string (literal)
+			flavor: "=" //bi directional connection
+		},
+		template : "<input type= "text" ng-model="chore"/>{{chore}}{{treat }} <div class="button" ng-click="done({chore:chore})">"
+	}
+})
+<kid done="alertChore()" treat="choclate" flavor="controllerFlavor">//some controller scope function
+
+-------------------
+Transclussion
+<panel>
+	<div></div>
+<panel>
+
+return {
+	transclude:true,
+	template:.... ng-transclude on an element
+}
+--------------------
+alterative controller
+app.controller("ctrl",function($scope){
+	this.getSOmething=function(){
+
+	}
+
+	return $scope.ctrl = this;
+})
+now we have to call contoller elements like
+ctrl.getsomething()
+--------------------
 
 
 
 
 
 -------------------
-
 ng-include	
