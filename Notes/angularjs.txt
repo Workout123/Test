@@ -135,7 +135,7 @@ Routes
 					controller: 'SimpleController',
 					templateURL: 'View.html'
 				})
-			.when("/partial2:idparam",
+			.when("/partial2:idparam",  ///$routeParams.idparam
 				{
 					/..
 				})
@@ -161,3 +161,18 @@ Factories (also Service-Provider)
 
 Service
 	insteaf of factory obj,use this 	
+
+--------------------------------------------
+Custom directive
+	app-directive()	
+
+
+
+
+
+
+
+
+-------------------
+
+ng-include	

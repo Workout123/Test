@@ -1,39 +1,12 @@
 
 window.onload = function init(){
 	var body = document.getElementsByTagName("BODY")[0];
+	
 	var but = document.createElement("input");
 	but.setAttribute("type", "button");
 	but.setAttribute("value","Start");
-	//but.setAttribute("is","start");
-	but.addEventListener("click",function(e){
-		for (var i = 1; i < 13; i++)
-		{		
-			(function (){
-				var prev = i - 1;
-				var target = document.getElementById("num"+i);
-				var prevTarget = document.getElementById("num"+prev);	
-				console.log(prevTarget);
-				(function animate(){
-					var width = document.body.offsetWidth;
-					var offset = target.offsetLeft;	
-					if (offset > width/2){
-						return;
-					}
-					if (prevTarget) 
-					{
-						if(prevTarget.offsetLeft > width/8)
-							target.style.left = offset + 20 + "px";
-						target.timer = setTimeout(animate,100);						
-					}	
-					else if(target){
-						target.style.left = offset + 20 + "px";
-						target.timer = setTimeout(animate,100);
-					}
-				})();
-			})();	
-
-		}	
-	},false);
+	but.setAttribute("is","start");
+	but.addEventListener("click",orchestrate,false);
 	body.appendChild(but);
 	
 	var but1 = document.createElement("input");
@@ -46,9 +19,9 @@ window.onload = function init(){
 			clearTimeout(num.timer);
 			num.style.left = "1em";
 		}
-
 	},false);
 	body.appendChild(but1)
+
 	for (var i = 1; i < 13; i++)
 	{
 		var num = document.createElement("h4");
@@ -60,4 +33,34 @@ window.onload = function init(){
 		num.timer = 0; 
 		body.appendChild(num);
 	}
+
+	function orchestrate(){
+		var i = 1;  
+		var num = document.getElementById("num"+i);	
+		function conductor( target,cb ){
+			console.log(target,cb);
+			var triggerNext = 0;
+			(function animate(){
+				if (target.offsetLeft > document.body.offsetWidth/2){
+					return;
+				}
+				if (target.offsetLeft > document.body.offsetWidth/4 && triggerNext == 0 ){
+					triggerNext = 1;
+					cb();
+				}
+				target.style.left = target.offsetLeft + 20 + "px";
+				target.timer = setTimeout(animate,100);
+			})();	
+		}
+		conductor(num,function cb(){
+			i++;
+			num = document.getElementById("num"+i);
+			if(num){
+				conductor(num,cb);
+			}
+		});
+			
+	}
+
+
 }

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-ng-app="CityApp">
+	<head>
+		<title>Cities</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+		<script src="ang1.js"></script>
+	</head>
+	<body data-ng-controller="CityController">
+		<select>
+			<option data-ng-repeat="city in cities" value="city">{{ city.name }}</option>
+		</select>
+		<input type="text"ng-model="desc"></input>
+		<label> {{ desc }} </label>
+		</br></br>
+		<input type="Button" value="refresh" id = "but"></input>
+		
+	</body>
+</html>

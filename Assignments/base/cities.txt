@@ -1,0 +1,11 @@
+{
+		"Bangalore" : "bang.txt",
+		"Delhi" : "",
+		"Mangalore" : "",
+		"Gotham" : "",
+		"New York" : "",
+		"Miami" : "",
+		"Mordor": "",
+		"chennai" :"",
+		"Dubai"   :""
+}

@@ -245,3 +245,31 @@ Effects
 
 	   
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+AJAX
+
+	$.ajax({
+		url:"",
+		data:{},
+		type:GET,
+		dataType:jsom
+	}).done(function(){
+		...
+	}).fail(function(){
+		...
+	}).always(function(){
+		...
+	});
+
+	$.ajax("url.ext",{},function(){})
+
+	$.get("url",{},fun)
+	$.getScript
+	$,getJson
+
+	(#body).load(".html");
+
+
+	----
+	serialize
+	serializeArray

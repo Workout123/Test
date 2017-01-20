@@ -1,0 +1,11 @@
+{
+		"Bangalore" : "bangalore.json",
+		"Delhi" : "delhi.json",
+		"Mangalore" : "mangalore.json",
+		"Gotham" : "gotham.json",
+		"New York" : "nyork.json",
+		"Miami" : "miami.json",
+		"Mordor": "mordor.json",
+		"chennai" :"chennai.json",
+		"Dubai"   :"dubai.json"
+}

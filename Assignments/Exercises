@@ -25,8 +25,8 @@ Exercises
 Assignments------
 
 16-01
-Fix 1 so that there are no more dom acesss
-fix 6 such a way that a element will track the progress ,use call back functions to track
+7 Fix 1 so that there are no more dom acesss
+8 fix 6 such a way that a element will track the progress ,use call back functions to track
 
 
 17-01
@@ -42,6 +42,4 @@ ajax the first 1
 
 then angular
 angular with custom directives
-
-//importance to scope
 

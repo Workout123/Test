@@ -9,7 +9,11 @@ http://javascriptissexy.com/how-to-learn-javascript-properly/
 
 http://www.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript
 
+Advanced
+----------
 
+http://ejohn.org/apps/learn/#10
+(problem with last 2)
 
 Jquery
 -------
@@ -255,7 +259,7 @@ ADVANCED JS
 
 				BigConstructor.prototype = new BiggerConstructor
 
-	Prototypal
+	Prototypal 
 	function object(o){
 		function F(){}
 		F.prototype = o;
