@@ -1,5 +1,5 @@
 var app=angular.module('ImgSlider',[]);
-app.directive("imgslidedynamic",function()  
+app.directive("imgslidedynamic",function($timeout)  
 {     
 	return{
 			restrict:'EA',
@@ -9,28 +9,42 @@ app.directive("imgslidedynamic",function()
 					disp: "&"				   
 		         },
 
-  			template: 	'<div class="rslides">'+
-  						  '<div ng-repeat="everyimg in imgsc  track by $index">'+
-  						  	'<img ng-src="{{everyimg}}"/>'+
-  						  '</div>'+
- 	 					'</div>'
-			,			
+  			template: 	
+  						'<div class="slider">'+
+  						  '<div ng-repeat="everyimg in imgsc">'+
+  						  	'<img ng-src="{{everyimg}}" style="height:300px;width:500px;"/>'+
+  						  '</div>' +
+  						 '</div>'
+			,		
+			
 			link:	function(scope,element,attrs)
-					{
-						scope.$watchCollection('imgsc',function(){	
-									
-									var queryResult=element[0].querySelector('.rslides');
-									var wrappedQueryResult = angular.element(queryResult);
-									wrappedQueryResult.responsiveSlides({
-										after:function(i)
-												{
-													//console.log("slide no: "+i);
-													scope.disp()(i);													
-												}
-									});							
+					{												
+						scope.$watchCollection('imgsc',function(){
+								$( document ).ready(function() {
+   						
+   									var queryResult=element[0].querySelector('.slider');
+									var wrappedQueryResult = angular.element(queryResult);									
 
+									if(wrappedQueryResult.hasClass('slick-initialized'))
+									{
+											wrappedQueryResult.slick("slickRemove");
+											wrappedQueryResult.slick("unslick");
+									}
+									
+									wrappedQueryResult.slick({
+									    autoplay: true,
+										accessibility: true,
+										adaptiveHeight: false,
+										arrows: true,										
+									});
+									
+									wrappedQueryResult.on('afterChange', function(event, slick, currentSlide, nextSlide){
+  											//console.log("slide no : ",currentSlide)		
+  											scope.disp()(currentSlide+1);													
+									});									
+								});
 						});
-						
+
             		} 
         };
 	});
@@ -48,10 +62,10 @@ app.service('ImgService',function($http,$q){
  } ); 
 
 
-controllers.ImgCtrl= function($scope,ImgService,$timeout)
+controllers.ImgCtrl= function($scope,ImgService)
 						{
 							$scope.selection=[];
-							$scope.currslide="no slide yet";
+							$scope.currslide="no slide change yet";
 							//console.log("in controller");
 							ImgService.findMe("http://localhost/wrap_plugin/imagelist.json").then
 								(function(response){
@@ -74,12 +88,7 @@ controllers.ImgCtrl= function($scope,ImgService,$timeout)
   								 $scope.$apply(function() {
 								      $scope.currslide=imgno;
     							})
-//why scope. apply here coz,  								 
-//Generally, when you have a structure outside angular world(such as jQuery plugin) that changes values, 
-//you have to call $scope.$apply() to let angular know about them.
-  
-  								//console.log("in here: "+imgname);
   							}
 
-						}
+  						}
 app.controller(controllers);
