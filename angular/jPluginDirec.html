@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+	<body>
+		<div>PLUGIN TEST </div>
+
+		<link rel="stylesheet" type="text/css" href="jplugin.css"/>
+
+		<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">></script>  -->
+
+		<script src="jquery-3.1.1.js"></script>
+		<script src="angular.min.js"></script>
+		
+		<script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+
+		<div ng-controller = "myCtrl" >
+		
+  			<my-direc imgs = pics> HEY </my-direc>
+  		<!--	<ul class ="rslides"> 
+				<li ng-repeat = "img in pics ">
+					<img ng-src = "{{img}}" >
+				</li>
+			</ul>    -->
+  		</div>
+
+
+
+		<script>
+
+  			var app = angular. module("myApp",[])
+  			app.controller("myCtrl",function($scope,$http){
+  				
+  				$http.get('http://localhost/test/allPics.json').success(function(data){;
+					$scope.pics = data.items;
+					for(i in data.items){
+						$scope.pics[i] = "ResponsiveSlides.js-master/img/"+data.items[i];
+					}
+					console.log($scope.pics);
+
+				});
+  			})
+
+  			
+
+  			app.directive("myDirec",function($timeout){
+  				return{
+  					restrict: 'EA',
+  				/*	template: '<ul class="rslides"> '+
+  			 			'<li><img src="ResponsiveSlides.js-master/IMG_0872.JPG" alt=""></li> '+
+  						'<li><img src="ResponsiveSlides.js-master/IMG_0873.JPG" alt=""></li> '+
+  						'<li><img src="ResponsiveSlides.js-master/IMG_0874.JPG" alt=""></li> '+
+						'</ul>',  */
+
+					scope: {
+					//	imgsrcli: "=imgs"
+						imgs: "="
+					}, 
+
+
+
+					template: 
+					'<ul class ="rslides"> '+
+					'<li ng-repeat = "img in imgs ">' +
+					'<img ng-src = "{{img}}"'+
+					'</li>'+
+					'</ul>',   
+
+  					link: function(scope,element,attr){
+  						//	$timeout(function() {
+  							element.ready(function(){
+  							//$(document).ready(function() {
+  						//	angular.element(document).ready(function(){
+  								console.log("6p");
+  								var elem = angular.element(element[0].querySelector('.rslides'));
+  								console.log("qr: "+element[0].querySelector('.rslides'));
+  								console.log("wr: "+angular.element(element[0].querySelector('.rslides')));
+  			   					elem.responsiveSlides();
+	 			   			});
+  			   		}
+  				}
+  			})
+		</script>
+		
+	</body>
+</html>
+
