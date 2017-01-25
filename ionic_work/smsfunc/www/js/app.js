@@ -57,3 +57,42 @@ app.controller('smsController',function($scope,$cordovaSms){
   }//sendSms
  
 });
+
+app.controller('CamCtrl', function($scope, $cordovaCamera) {
+  console.log("loaded");
+    $scope.takePicture = function (options) {
+  
+      var options = {
+         quality : 75,
+         targetWidth: 200,
+         targetHeight: 200,
+         sourceType: 1
+      };
+
+      $cordovaCamera.getPicture(options).then(function(imageData) {
+         $scope.picture = imageData;;
+      }, function(err) {
+         console.log(err);
+      });
+    
+   };
+
+    $scope.getPicture = function (options) {
+  
+      var options = {
+         quality : 75,
+         targetWidth: 200,
+         targetHeight: 200,
+         sourceType: 0
+      };
+
+      $cordovaCamera.getPicture(options).then(function(imageData) {
+         $scope.picture = imageData;;
+      }, function(err) {
+         console.log(err);
+      });
+   };  
+
+
+});
+
