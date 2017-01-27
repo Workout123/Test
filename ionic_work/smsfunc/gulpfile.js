@@ -11,7 +11,7 @@ var paths = {
   sass: ['./scss/**/*.scss']
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass','default2']);
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/ionic.app.scss')
@@ -49,3 +49,10 @@ gulp.task('git-check', function(done) {
   }
   done();
 });
+
+//added by me
+
+
+gulp.task('default2', function (){
+   console.log("css file changed by user");
+}); 
