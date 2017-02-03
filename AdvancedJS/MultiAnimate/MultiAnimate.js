@@ -1,48 +1,58 @@
-var MoveText=null;
-var getval, flag=0;
-
-//initial values
-function initialize()
+function DoEverything()
 {
-  MoveText = document.getElementById('RollOverText');
-  MoveText.style.position= 'relative';
-  MoveText.style.left = '0px';
+  var pos = 0;
+  var MoveText=null;
 
-  MoveText2 = document.getElementById('RollOverText2');
-  MoveText2.style.position= 'relative';
-  MoveText2.style.left = '0px';
-}
-
-function MoveRight()
-{
-  MoveText.style.left = parseInt(MoveText.style.left) + 10 + 'px';
-  MoveText2.style.left = parseInt(MoveText.style.left) + 10 + 'px';
-}
-
-function MoveLeft()
-{
-  MoveText.style.left = parseInt(MoveText.style.left) - 10 + 'px';
-  MoveText2.style.left = parseInt(MoveText.style.left) - 10 + 'px';
-}
-
-function AnimateText()
-{
-  getval = parseInt(MoveText.style.left);
-  //setInterval(AnimateText, 100);
-
-  //Boundary conditions
-  if(getval<=1200 && flag==0)
-    MoveRight();
-
-  else
+  function Initialize(Stringval)
   {
-    MoveLeft();
-    flag=1;
-    if(getval<0)
-      flag=0;
+    MoveText = document.getElementById(Stringval);
+    MoveText.style.position="relative";
+    MoveText.style.left='0px';
   }
-  setTimeout(AnimateText, 70);
-  //document.write(MoveText.style.left);
+
+  function Animate()
+  {
+    //console.log(val);
+    pos++;
+    MoveText.style.left=pos+'px';
+  }
+  return {
+    CallAnimate: function() {
+      //console.log("in here");
+      Animate();
+    },
+    CallInitialize: function(Stringval) {
+      //console.log("refreshing..");
+      Initialize(Stringval);
+    },
+    GetPosition: function() {
+      return pos;
+    }
+
+  }
 }
 
-window.onload=initialize;
+function SetMotion()
+{
+  var NumList=new Array("TextToMove1", "TextToMove2", "TextToMove3", "TextToMove4");
+  var Motion=new Array();
+  for(var i=0; i<4; i++)
+  {
+    Motion[i]=DoEverything();
+    Motion[i].CallInitialize(NumList[i]);
+  }
+  //Motion = DoEverything();
+  function AnimateAll()
+  {
+    for(var i=0; i<3; i++)
+    {
+      Motion[0].CallAnimate();
+      if(Motion[i].GetPosition()>600)
+        Motion[i+1].CallAnimate();
+    }
+  }
+  //if(flag==0)
+  setInterval(AnimateAll, 5);
+  //Motion.CallRefresh();
+  //return Motion;
+}
