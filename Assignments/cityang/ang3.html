@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html data-ng-app="CityApp">
+	<head>
+		<title>Cities</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+		<script src="ang3.js"></script>
+	</head>
+	<body data-ng-controller="CityController">
+		<select  ng-model="city">
+			<option data-ng-repeat="city in cities">{{ city.name }}</option>
+		</select>
+		<label> {{ desc }} </label>
+		</br></br>
+		<input type="Button" value="Refresh" ng-click="refresh()"></input>
+		
+	</body>
+</html>

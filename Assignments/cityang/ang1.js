@@ -1,43 +1,74 @@
 CityApp = angular.module("CityApp",[]);
-CityApp.factory("CityFactory",function(){
-	var cities = ["yes"];
+CityApp.factory("CityFactory",function($http,$q){
+	var cityObj = {};
+	var descObj = {};
 	var factory = {};
-	(function(){
-
-	})();
-	console.log("end",cities);	
 	factory.getCities = function(){
-			$.ajax({
-			url : "../base/cities.json",
-			type : "GET" 
-		}).done(function(json){
-			console.log(cities);
-			for (var city in json)
+		var cities = [];
+		descObj = {};
+		console.log("city Ajax");
+		var defer = $q.defer();
+		$http.get("../base/cities.json")
+		.then(function(response){;
+			cityObj = response.data;
+			for (var city in cityObj)
 			{
-				var obj = {"name":city,"description":json[city]};
-				//console.log(city,json[city],obj);
-				cities.push(obj);
+				cities.push({"name":city})
 			}
-			for (city in cities)
-			{	
-				//console.log(city,cities[city]);
-			}	
-		
-			console.log("inside",cities);
-			return cities;
+			defer.resolve(cities);	
+
+		},function(){
+			console.log("Error");
+			defer.reject();
 		});
+	
+		return defer.promise;
+	};
+	factory.getDescription = function(city){
+		var defer = $q.defer();
+		if(descObj[city])
+		{
+			console.log("Desc cache");
+			defer.resolve(descObj[city]);
+		}	
+		else
+		{
+			var link = "../base/"+cityObj[city];
+			$http.get(link)
+			.then(function(response){
+				console.log("desc Ajax");
+				data = response.data;
+				descObj[city] = data["desc"];
+				defer.resolve(descObj[city]);	
+
+			},function(){
+				console.log("Error");
+				defer.reject();
+			});
+		}
+		return defer.promise;
 		
 	};
-	factory.ajaxCities = function(){
-		
-	};
+
 	return factory;
 });
 CityApp.controller("CityController",function($scope,CityFactory){
-	$scope.cities = CityFactory.getCities();
-	//$scope.cities = [{name:"mang",description:"lore"},{name:"bang",description:"lore"}];
-	$scope.desc = "yes";
-	console.log($scope.cities);
+	$scope.refresh = function (){
+		$scope.desc = "";
+		CityFactory.getCities().then(function(data){
+			$scope.cities = data;
+		});	
+	};
+	$scope.refresh();
+	
+	$scope.setDesc = function(){
+		 if($scope.city)
+		 {
+		 	CityFactory.getDescription($scope.city).then(function(data){
+			$scope.desc	= data;
+			});	
+		 }	
+	}
 });
 
 

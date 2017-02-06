@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html data-ng-app="CityApp">
+	<head>
+		<title>Cities</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+		
+		<script src="ang_res.js"></script>
+		<style>
+			table, th, td {
+			    border: 3px solid black;
+			    border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body data-ng-controller="CityController">
+		<script type="text/ng-template" id="table.html">
+			<table>
+				<tr>
+					<th>  Restaurant  </th>
+					<th>  Rating  </th>
+				</tr>
+				<tr ng-repeat="rest in restaurants">
+					<td>{{rest.name}}</td>
+					<td>{{rest.rating}}</td>
+				</tr>	
+			</table>
+		</script>
+
+		<select  ng-model="city">
+			<option data-ng-repeat="city in cities">{{ city.name }}</option>
+		</select>
+		<label> {{ desc }} </label>
+		</br>
+		<restaurant change="city"> </restaurant>
+		</br>
+		<input type="Button" value="Refresh" ng-click="refresh()"></input>
+		
+	</body>
+</html>
