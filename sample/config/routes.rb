@@ -53,5 +53,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-   get 'data/create_random' => 'data#create_random'
+   get 'data1/create_random1' => 'data#create_random'
 end

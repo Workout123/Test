@@ -1,15 +1,17 @@
 var app = angular.module("myApp", ['ui.router','restangular']);
  
  
- app.config(function($stateProvider,RestangularProvider) {
+ app.config(function(RestangularProvider,$stateProvider,$urlRouterProvider) {
 
     RestangularProvider.setBaseUrl('http://localhost:3000');
-    
-   $stateProvider.state('givedata',{
-      url:"givedata",
-      template:"<script>alert('Deleted Successfully')</script>",
-      controller: "myCtrl"
+     $stateProvider
+    .state('statedata', {
+      url: "data2/create_random2",
+    //  controller: "stateCtrl",
+      templateUrl: "display.html"
     });
+     $urlRouterProvider.otherwise('/');
+   
   });
 
  var controllers={};
@@ -22,11 +24,21 @@ var app = angular.module("myApp", ['ui.router','restangular']);
  		console.log("here");
       // $scope.name="subha";
 
-     Restangular.all("data").get("create_random").then(function (o){
+    //  Restangular.all("data1").get("create_random1").then(function (o){
+    //   $scope.name=o;
+    //    console.log("resp: ",o);
+    // });
+  
+  Restangular.one("data1/create_random1").get().then(function (o){
       $scope.name=o;
        console.log("resp: ",o);
     });
-  }
+  } 
+   $scope.getstatedata = function() {
+    console.log("in getstatedata ");
+     
+    $state.go("statedata");
+    }
  	 
 };
 

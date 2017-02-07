@@ -2,7 +2,7 @@
 <html >
 	<body  data-ng-app="myApp">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-		<script src="city/cityjs.js"></script>	
+		<script src="cityjs.js"></script>	
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.5.1/restangular.min.js"></script>
@@ -13,8 +13,12 @@
 		<div data-ng-controller="myCtrl">
 			<input type="button" name="Get_data" value="GetData" ng-click="getdata()"/>
 			<p>Details from server: {{name}} </p>
-		</div>	
 
+			<br/><br/>
+			<input type="button" name="Get_data2" value="TryState" ng-click="getstatedata()"/>
+			 <section ui-view></section>/		
+		</div>	
+			
 		</center>	
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		

@@ -14,6 +14,7 @@ class DataController < ApplicationController
     	json = File.read('public/city/citylist.json')
 		obj = JSON.parse(json)
 		total=obj['city'].count
+    	
     	@dta=givedata(rand(total))
     	print "hi darshu";
     	# print "in function : "
