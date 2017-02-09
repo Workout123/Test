@@ -15,7 +15,7 @@ function DoEverything()
 
 function SetMotion()
 {
-  Motion=DoEverything;
-  setInterval(DoEverything(), 5);
+  var Motion=DoEverything;
+  setInterval(Motion(), 5);
 
 }

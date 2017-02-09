@@ -17,7 +17,7 @@ function DoEverything()
   function NewElement()
   {
     var start=performance.now();
-    for(var j=0; j<200; j++)
+    for(var j=0; j<400; j++)
       console.log(list.push(j++));
     var stop=performance.now();
     pos+=stop-start;
@@ -35,7 +35,7 @@ function DoEverything()
 
 function SetMotion()
 {
-  Motion = DoEverything();
+  var Motion = DoEverything();
   //if(flag==0)
   setInterval(Motion.CallAnimate, 5);
   //Motion.CallRefresh();
