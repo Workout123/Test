@@ -28,15 +28,15 @@ function DoEverything()
 
 function SetMotion()
 {
-  Motion = DoEverything();
+  var Motion = DoEverything();
   //if(flag==0)
   setInterval(Motion.CallAnimate, 5);
   //Motion.CallRefresh();
-  //return Motion;
+  return Motion();
 }
 
 function SetStop()
 {
-  //var isMotion=SetMotion(1);
-  Motion.CallRefresh();
+  var isMotion=SetMotion();
+  isMotion.CallRefresh();
 }
