@@ -41,7 +41,7 @@ function SetMotion()
 {
   var NumList=new Array("TextToMove1", "TextToMove2", "TextToMove3", "TextToMove4");
   Motion=new Array();
-  for(var i=0; i<4; i++)
+  for(var i=0; i<NumList.length; i++)
   {
     Motion[i]=DoEverything();
     Motion[i].CallInitialize(NumList[i]);
@@ -49,7 +49,7 @@ function SetMotion()
   //Motion = DoEverything();
   function AnimateAll()
   {
-    for(var i=0; i<3; i++)
+    for(var i=0; i<NumList.length-1; i++)
     {
       Motion[0].CallAnimate();
       if(Motion[i].GetPosition()>600)
@@ -59,11 +59,12 @@ function SetMotion()
   //if(flag==0)
   setInterval(AnimateAll, 5);
   //Motion.CallRefresh();
-  //return Motion;
+  return Motion();
 }
 
 function SetRefresh()
 {
+  var isMotion=SetMotion();
   for(i=0; i<4; i++)
-    Motion[i].CallRefresh();
+    isMotion[i].CallRefresh();
 }
