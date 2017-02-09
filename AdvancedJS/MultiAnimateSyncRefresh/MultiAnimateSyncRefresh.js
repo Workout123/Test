@@ -1,62 +1,69 @@
-var MoveText=new Array();
-var ThisText=null;
-var getval=new Array();
-
-//MoveText[0]=new Object();
-
-//initial values
-function initialize()
+function DoEverything()
 {
+  var pos = 0;
+  var MoveText=null;
 
-  MoveText[0] = document.getElementById('RollOverText1');
-  MoveText[0].style.position= 'relative';
-  MoveText[0].style.left = '0px';
+  function Initialize(Stringval)
+  {
+    MoveText = document.getElementById(Stringval);
+    MoveText.style.position="relative";
+    MoveText.style.left='0px';
+  }
 
+  function Animate()
+  {
+    //console.log(val);
+    pos++;
+    MoveText.style.left=pos+'px';
+  }
+  return {
+    CallAnimate: function() {
+      //console.log("in here");
+      Animate();
+    },
+    CallInitialize: function(Stringval) {
+      //console.log("refreshing..");
+      Initialize(Stringval);
+    },
+    GetPosition: function() {
+      return pos;
+    },
+    CallRefresh: function() {
+      //console.log("refreshing..");
+      pos=0;
+      Animate();
+    }
 
-  MoveText[1] = document.getElementById('RollOverText2');
-  MoveText[1].style.position= 'relative';
-  MoveText[1].style.left = '0px';
-
-  MoveText[2] = document.getElementById('RollOverText3');
-  MoveText[2].style.position= 'relative';
-  MoveText[2].style.left = '0px';
-
-  MoveText[3] = document.getElementById('RollOverText4');
-  MoveText[3].style.position= 'relative';
-  MoveText[3].style.left = '0px';
+  }
 }
 
-function MoveRight(ThisText)
+function SetMotion()
 {
-  ThisText.style.left = parseInt(ThisText.style.left) + 10 + 'px';
-}
-
-/*function MoveLeft(ThisText)
-{
-  ThisText.style.left = parseInt(ThisText.style.left) - 10 + 'px';
-}*/
-
-function AnimateText()
-{
-  //setInterval(AnimateText, 1000);
+  var NumList=new Array("TextToMove1", "TextToMove2", "TextToMove3", "TextToMove4");
+  Motion=new Array();
   for(var i=0; i<4; i++)
   {
-    getval[i] = parseInt(MoveText[i].style.left);
+    Motion[i]=DoEverything();
+    Motion[i].CallInitialize(NumList[i]);
   }
-
-  //MoveRight(MoveText[0]);
-  //Boundary conditions
-  //if(getval<=1200 && flag==0)
-  for(var i=0; i<3; i++)
+  //Motion = DoEverything();
+  function AnimateAll()
   {
-    MoveRight(MoveText[0]);
-    if(getval[i]>600)
-      MoveRight(MoveText[i+1]);
+    for(var i=0; i<3; i++)
+    {
+      Motion[0].CallAnimate();
+      if(Motion[i].GetPosition()>600)
+        Motion[i+1].CallAnimate();
+    }
   }
-
-
-  setTimeout(AnimateText, 70);
-  //document.write(MoveText.style.left);
+  //if(flag==0)
+  setInterval(AnimateAll, 5);
+  //Motion.CallRefresh();
+  //return Motion;
 }
 
-window.onload=initialize;
+function SetRefresh()
+{
+  for(i=0; i<4; i++)
+    Motion[i].CallRefresh();
+}

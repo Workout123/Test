@@ -1,26 +1,14 @@
 <html>
+<script type="text/javascript" src="MultiAnimateSyncRefresh.js">
+</script>
 
-  <head>
+<body>
+  <p id="TextToMove1">1</p>
+  <p id="TextToMove2">2</p>
+  <p id="TextToMove3">3</p>
+  <p id="TextToMove4">4</p>
+  <input type="button" onclick="SetMotion();" value="Move Text" />
+  <input type="button" onclick="SetRefresh();" value="Refresh" />
 
-    <title>Animate</title>
-
-      <link rel="stylesheet" type="text/css" href="MultiAnimateSyncRefresh.css" />
-
-  </head>
-
-  <script type="text/javascript" src="MultiAnimateSyncRefresh.js">
-
-  </script>
-
-  <body>
-    <form>
-      <p class="text" id="RollOverText1">1</p>
-      <p class="text" id="RollOverText2">2</p>
-      <p class="text" id="RollOverText3">3</p>
-      <p class="text" id="RollOverText4">4</p>
-      <input type="button" value="Move Text" id="Roll" onclick="AnimateText();"/>
-      <input type="button" value="Refresh" id="Refresh" onclick="initialize();"/>
-    </form>
-  </body>
-
+</body>
 </html>
