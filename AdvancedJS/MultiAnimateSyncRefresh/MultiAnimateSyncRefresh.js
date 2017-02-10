@@ -1,70 +1,79 @@
-function DoEverything()
-{
-  var pos = 0;
-  var MoveText=null;
 
-  function Initialize(Stringval)
+
+
+(
+  function ()
   {
-    MoveText = document.getElementById(Stringval);
-    MoveText.style.position="relative";
-    MoveText.style.left='0px';
-  }
+      document.getElementById("Move Text").addEventListener("click", DoEverything);
+      //document.getElementById("Refresh").addEventListener("click", Refresh);
 
-  function Animate()
-  {
-    //console.log(val);
-    pos++;
-    MoveText.style.left=pos+'px';
-  }
-  return {
-    CallAnimate: function() {
-      //console.log("in here");
-      Animate();
-    },
-    CallInitialize: function(Stringval) {
-      //console.log("refreshing..");
-      Initialize(Stringval);
-    },
-    GetPosition: function() {
-      return pos;
-    },
-    CallRefresh: function() {
-      //console.log("refreshing..");
-      pos=0;
-      Animate();
-    }
+      function DoEverything()
+      {
+        var pos=new Array(), val=0;
+        var IntervalVal;
+        var MoveText=new Array();
+        var start, stop, timetaken=new Array();
+        document.getElementById("Refresh").addEventListener("click", Refresh);
+
+        var NumList=new Array("TextToMove1", "TextToMove2", "TextToMove3", "TextToMove4");
+
+        for(var i=0; i<NumList.length; i++)
+        {
+          Initialize(NumList[i], i);
+          //timetaken[i]=0;
+        }
+
+        function Initialize(Stringval, i)
+        {
+          MoveText[i]=document.getElementById(Stringval);
+          MoveText[i].style.position="relative";
+          MoveText[i].style.left='0px';
+          pos[i]=0;
+          //console.log(screen.width);
+        }
+
+        function Refresh()
+        {
+          for(var i=0; i<NumList.length; i++)
+          {
+            pos[i]=0;
+            Initialize(NumList[i], i);
+          }
+          clearInterval(IntervalVal);
+          //SetMotion();
+          Animate();
+        }
+
+        function MoveStep(i)
+        {
+            //start=performance.now();
+            pos[i]++;
+            MoveText[i].style.left=pos[i]+'px';
+            //stop=performance.now();
+            //timetaken[i]+=(stop-start);
+            //console.log(timetaken[i]);
+
+        }
+
+        function CallNextElement()
+        {
+          MoveStep(0);
+          for(var i=0; i<NumList.length-1; i++)
+          {
+            if(pos[i]>screen.width/2)
+              MoveStep(i+1);
+          }
+        }
+
+        function Animate()
+        {
+          //console.log("In SetMotion");
+          IntervalVal=setInterval(CallNextElement, 5);
+        }
+
+        return Animate();
+        //alert ("Hello World!");
+      }
 
   }
-}
-
-function SetMotion()
-{
-  var NumList=new Array("TextToMove1", "TextToMove2", "TextToMove3", "TextToMove4");
-  Motion=new Array();
-  for(var i=0; i<NumList.length; i++)
-  {
-    Motion[i]=DoEverything();
-    Motion[i].CallInitialize(NumList[i]);
-  }
-  //Motion = DoEverything();
-  function AnimateAll()
-  {
-    for(var i=0; i<NumList.length-1; i++)
-    {
-      Motion[0].CallAnimate();
-      if(Motion[i].GetPosition()>600)
-        Motion[i+1].CallAnimate();
-    }
-  }
-  //if(flag==0)
-  setInterval(AnimateAll, 5);
-  //Motion.CallRefresh();
-  return Motion();
-}
-
-function SetRefresh()
-{
-  var isMotion=SetMotion();
-  for(i=0; i<4; i++)
-    isMotion[i].CallRefresh();
-}
+)();
