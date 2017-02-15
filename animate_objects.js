@@ -2,13 +2,13 @@
   function move()
   {
     var b=document.getElementsByClassName("button");
-    var j=0;
+    var j=-1;
     function inner_move()
     {
-      if(j<b.length)
+      if(j<=b.length)
       { 
-        $(b[j]).animate({left: "500px"},"slow",inner_move);
         j++;
+        $(b[j]).animate({left: "500px"},"slow",inner_move);
       }
       //setTimeout(inner_move,0);
     }
@@ -16,17 +16,21 @@
   }
   function add_event()
   {
-    button.addEventListener("click",move());
+    var animate=document.getElementById("click here");
+    var refresh=document.getElementById("refresh");
+    animate.addEventListener("click",move());
+    refresh.addEventListener("click",function(){location.reload();});
   }
   function animate_button()
   {
+    var arr=["click here","refresh"];
+    for(k=0;k<arr.length;k++)
+    {
     var button = document.createElement("button");
-    button.setAttribute("id","button");
-    button.innerHTML = "click here";
-    var body=document.getElementById("button_column"); 
-    body.appendChild(button);
-    var linebreak = document.createElement("br");
-    body.appendChild(linebreak);
+    button.setAttribute("id",arr[k]);
+    button.innerHTML = arr[k];
+    document.body.appendChild(button);
+    }
   }
   function create_button()
   {
@@ -43,8 +47,8 @@
         { 
           var button = document.createElement("button");
           button.setAttribute("class","button");
-          button.innerHTML = buttons;
-          var body=document.getElementById("button_column"); 
+          button.innerHTML = buttons; 
+          var body=document.getElementById("button_column");
           body.appendChild(button);
           var linebreak = document.createElement("br");
           body.appendChild(linebreak);

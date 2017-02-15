@@ -1,0 +1,18 @@
+
+<html ng-app="places">
+<head>
+	<h2>DESCRIPTION ABOUT PLACES</h2>
+</head>
+<body ng-controller="desc">
+<script src=/home/infibeam/Downloads/angular.min.js></script>
+<script>
+var place = angular.module('places', []);
+place.controller=('controller',function($scope, $http) {
+    $http({method: 'POST', url: 'http://localhost/city/description.json'}).success(function(data) {
+      $scope.desc = data.desc; 
+    });
+  })
+</script>
+<select ng-model="dropdown" ng-options="desc.key for desc.key in desc"></select>
+</body>
+</html>

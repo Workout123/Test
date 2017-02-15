@@ -1,0 +1,6 @@
+{
+ "restaurant":[
+		{"name":"Deccan pavilion", "rating":"Excellent"},
+		{"name":"Hari bhavan","rating":"Average"}
+	     ]
+}
