@@ -9,13 +9,13 @@
 
       function DoEverything()
       {
-        var pos=new Array(), val=0;
+        var pos=new Array(), val=0, curr=0;
         var IntervalVal;
         var MoveText=new Array();
-        var start, stop, timetaken=new Array();
+        //var start, stop, timetaken=new Array();
         document.getElementById("Refresh").addEventListener("click", Refresh);
 
-        var NumList=new Array("TextToMove1", "TextToMove2", "TextToMove3", "TextToMove4");
+        var NumList=new Array("TextToMove1", "TextToMove2", "TextToMove3", "TextToMove4", "TextToMove5");
 
         for(var i=0; i<NumList.length; i++)
         {
@@ -37,8 +37,10 @@
           for(var i=0; i<NumList.length; i++)
           {
             pos[i]=0;
+            //timetaken[i]=0;
             Initialize(NumList[i], i);
           }
+          curr=0;
           clearInterval(IntervalVal);
           //SetMotion();
           Animate();
@@ -55,21 +57,47 @@
 
         }
 
-        function CallNextElement()
+        //Works
+        /*function CallNextElement()
         {
           MoveStep(0);
           for(var i=0; i<NumList.length-1; i++)
           {
-            if(pos[i]>screen.width/2)
+            if(pos[i]>screen.availWidth/2)
               MoveStep(i+1);
+          }
+        }*/
+
+        //Experiment
+        //curr=0;
+        function CallNextElement()
+        {
+          if(curr<NumList.length)
+          {
+            if(pos[curr]>screen.availWidth/2)
+              curr++;
+            MoveStep(curr);
           }
         }
 
+        //Works
         function Animate()
         {
           //console.log("In SetMotion");
           IntervalVal=setInterval(CallNextElement, 5);
         }
+
+        //Experiment
+        /*curr=0;
+        function Animate()
+        {
+          while(curr<NumList.length)
+          {
+            if(pos[curr]>screen.availWidth/2)
+              curr++;
+            MoveStep(curr);
+          }
+        }*/
 
         return Animate();
         //alert ("Hello World!");
