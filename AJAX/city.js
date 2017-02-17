@@ -6,26 +6,21 @@
       $("#city").change(function()
       {
         var selectval=document.getElementById("city").value;
-        var val;
-        //console.log(selectval);
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function()
-        {
-          if (this.readyState == 4 && this.status == 200)
+        $.ajax({
+          url: "city.json",
+          dataType: 'json',
+          success: function(cityList)
           {
-            myObj = JSON.parse(this.responseText);
-            //document.getElementById("demo").innerHTML = myObj.city[0].name;
-            for(col in myObj.city)
-              if(selectval==myObj.city[col].name)
+            //result = JSON.parse(result);
+            for(col in cityList.city)
+              if(selectval==cityList.city[col].name)
               {
-                document.getElementById("demo").innerHTML = myObj.city[col].description;
+                document.getElementById("demo").innerHTML = cityList.city[col].description;
                 break;
               }
-            //document.getElementById("demo").innerHTML=val;
+            //console.log(cityList.city[0].name);
           }
-        };
-        xmlhttp.open("GET", "city.json", true);
-        xmlhttp.send();
+        })
       });
     });
 
