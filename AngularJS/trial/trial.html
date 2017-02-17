@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<!--<script src="../angular.min.js" charset="utf-8"></script>-->
+<body>
+
+<div ng-controller="myCtrl">
+	Enter name: <input type="text" ng-model="nameTyped"/> {{nameTyped}}
+	<ul>
+    	<li ng-repeat="cust in customer | filter:nameTyped">{{cust.name}}</li>
+    </ul>
+</div>
+
+</body>
+<script src="module.js" charset="utf-8"></script>
+<script src="controller.js" charset="utf-8"></script>
+
+</script>
+<!--<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    $scope.customer=[{name:"ABC"}, {name:"PQR"}];
+});
+</script>-->
+</html>
