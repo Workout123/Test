@@ -1,0 +1,10 @@
+{
+    "cities":[
+        { "name":"London", "description":"You clicked London" },
+        { "name":"Paris", "description":"You clicked Paris" },
+        { "name":"NY", "description":"You clicked NY" },
+        { "name":"Bangalore", "description":"You clicked Bangalore" },
+        { "name":"Mumbai", "description":"You clicked Mumbai" },
+        { "name":"Spain", "description":"You clicked Spain" }
+    ]
+}

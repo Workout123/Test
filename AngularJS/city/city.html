@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="CityDesc">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="module.js" charset="utf-8"></script>
+  <script src="controller.js" charset="utf-8"></script>
+  <!--<script src="city.js" charset="utf-8"></script>-->
+
+<body>
+
+<div ng-controller="myCtrl">
+  List of Available cities: <br />
+  <ul>
+    	<li ng-repeat="city in cities | filter:nameTyped | orderBy:'name'">{{city.name}}</li>
+  </ul>
+	Enter name: <input type="text" ng-model="nameTyped"/> {{nameTyped}}
+
+  <p id="InsertHere"></p>
+</div>
+
+</body>
+
+</html>
