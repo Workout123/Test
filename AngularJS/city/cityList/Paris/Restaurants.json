@@ -1,0 +1,7 @@
+{
+ "restaurant":[
+		{"name":"Paris_1", "rating":"*"},
+		{"name":"Paris_2","rating":"***"},
+		{"name":"Paris_3","rating":"*****"}
+	     ]
+}

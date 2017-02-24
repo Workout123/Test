@@ -1,6 +1,11 @@
 app.directive('description',function(){
 		return {
-      //E = Element name
+      /*
+      E = Element name
+      A = Attribute name
+      C = Class
+      M = Comment
+      */
 			restrict: 'E',
       //From $scope.desc
       /*

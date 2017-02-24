@@ -9,22 +9,23 @@
   <script src="module.js" charset="utf-8"></script>
   <script src="controller.js" charset="utf-8"></script>
   <script src="directive.js" charset="utf-8"></script>
+  <script src="factory.js" charset="utf-8"></script>
 
-<body>
+  <body>
 
-<div ng-controller="myCtrl">
-  Select a City: <br />
+    <div ng-controller="myCtrl">
+      Select a City: <br />
 
-  <!-- ng-change <- calls function whenever value is changed.
+      <!-- ng-change <- calls function whenever value is changed.
       Not really required right now. Will work without it also-->
-  <select id="citySelected" ng-model="citySelected" ng-options="city.name for city in cities" ng-change=display()>
-  </select>
+      <select id="citySelected" ng-model="citySelected" ng-options="city for city in cities" ng-change=display()>
+      </select>
 
-  <!-- Calls directive -->
-  <description></description>
+      <!-- Calls directive -->
+      <description></description>
 
-</div>
+    </div>
 
-</body>
+  </body>
 
 </html>
