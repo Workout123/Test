@@ -1,6 +1,4 @@
 
-
-
 (
   function ()
   {
@@ -9,7 +7,7 @@
 
       function DoEverything()
       {
-        var pos=new Array(), val=0, curr=0;
+        var pos=new Array(), curr=0;
         var IntervalVal;
         var MoveText=new Array();
         //var start, stop, timetaken=new Array();
@@ -36,7 +34,7 @@
         {
           for(var i=0; i<NumList.length; i++)
           {
-            pos[i]=0;
+            //pos[i]=0;
             //timetaken[i]=0;
             Initialize(NumList[i], i);
           }
@@ -56,27 +54,23 @@
             //console.log(timetaken[i]);
 
         }
-
+        whattomove=new Array();
+        curr=0;
+        whattomove.push(curr);
         //Works
-        /*function CallNextElement()
-        {
-          MoveStep(0);
-          for(var i=0; i<NumList.length-1; i++)
-          {
-            if(pos[i]>screen.availWidth/2)
-              MoveStep(i+1);
-          }
-        }*/
-
-        //Experiment
-        //curr=0;
         function CallNextElement()
         {
-          if(curr<NumList.length)
+          if(pos[curr]>screen.availWidth)
           {
-            if(pos[curr]>screen.availWidth/2)
-              curr++;
-            MoveStep(curr);
+            whattomove.shift();
+            curr=++curr;
+          }
+          if(pos[curr]>screen.availWidth/2)
+            whattomove.push(curr++);
+          //MoveStep(0);
+          for(var i=0; i<whattomove.length; i++)
+          {
+            MoveStep(i);
           }
         }
 
@@ -86,18 +80,6 @@
           //console.log("In SetMotion");
           IntervalVal=setInterval(CallNextElement, 5);
         }
-
-        //Experiment
-        /*curr=0;
-        function Animate()
-        {
-          while(curr<NumList.length)
-          {
-            if(pos[curr]>screen.availWidth/2)
-              curr++;
-            MoveStep(curr);
-          }
-        }*/
 
         return Animate();
         //alert ("Hello World!");
