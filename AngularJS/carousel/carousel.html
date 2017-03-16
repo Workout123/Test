@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="ImgSlider">
+
+  <link rel="stylesheet" type="text/css" href="carousel.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+
+  <script src="module.js" charset="utf-8"></script>
+  <script src="controller.js" charset="utf-8"></script>
+
+  <body>
+
+    <div ng-controller="SliderCtrl">
+
+      <div class="gallery" ng-repeat="imgSelected in images" >
+        <input type="checkbox" ng-click=update(imgSelected.id,imgSelected.src)></input>
+        <img ng-src="{{imgSelected.src}}" >
+
+      </div>
+
+      <!--<div>
+        <carousel interval="intervalVal">
+          <slide ng-repeat="image in imgPathArray" active="image.active">
+            <img ng-src="{image}">
+          </slide>
+        </carousel>
+      </div>-->
+
+    </div>
+
+  </body>
+
+</html>

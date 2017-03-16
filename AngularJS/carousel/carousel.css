@@ -1,0 +1,17 @@
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height: 150px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.box {
+    padding: 15px;
+    text-align: center;
+}
