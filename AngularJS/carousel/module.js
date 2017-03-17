@@ -1,1 +1,1 @@
-var app=angular.module("ImgSlider", []);
+var app=angular.module("ImgSlider", ['ui.bootstrap']);
