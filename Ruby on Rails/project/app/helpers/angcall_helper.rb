@@ -1,0 +1,2 @@
+module AngcallHelper
+end

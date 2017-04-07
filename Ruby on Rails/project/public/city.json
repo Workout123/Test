@@ -1,0 +1,9 @@
+{
+    "cities":[ {"city":"London"},
+      {"city":"Paris"},
+      {"city":"NY"},
+      {"city":"Bangalore"},
+      {"city":"Mumbai"},
+      {"city":"Spain"}
+    ]
+}

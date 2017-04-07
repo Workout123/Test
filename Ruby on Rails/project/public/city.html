@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Scope of app is throughtout the file. Add in div to localise scope -->
+<html ng-app="CityDesc">
+
+  <!-- Doesnt work with angular.min.js -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" defer></script>-->
+  <!--<script src="angular-route.js"></script>-->
+  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js" defer></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" defer></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js" defer></script>-->
+  <!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>-->
+  <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.3.1/restangular.js" defer></script>-->
+  <!--<script src="restangular.js"></script>-->
+  <script data-require="angular.js@1.2.12" data-semver="1.2.12" src="http://code.angularjs.org/1.2.12/angular.js"></script>
+  <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script data-require="bootstrap@*" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+  <!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/restangular/1.6.1/restangular.js"></script>
+
+
+  <!-- For external Module and Controller and Directive-->
+  <script src="module.js" charset="utf-8"></script>
+  <script src="controller.js" charset="utf-8"></script>
+  <script src="directive.js" charset="utf-8"></script>
+  <script src="factory.js" charset="utf-8"></script>
+
+  <body>
+
+    <div ng-controller="myCtrl">
+      Select a City: <br />
+
+      <!-- ng-change <- calls function whenever value is changed.
+      Not really required right now. Will work without it also-->
+      <!--<select id="citySelected" ng-model="citySelected" ng-options="city for city in cities" ng-change=display()>-
+      </select>-->
+
+      <!-- For Random number generator -->
+      <button ng-click=display()>Generate random city</button>
+
+      <!-- Calls directive -->
+      <description></description>
+
+    </div>
+
+  </body>
+
+</html>
