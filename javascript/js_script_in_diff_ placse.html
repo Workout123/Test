@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js script in diff places</title>
+	<script type="text/javascript" src="alert.js">
+	
+	</script>
+</head>
+<body>
+
+<script type="text/javascript">
+	document.write("hello");
+	var myvar="global variable";
+	function checkscope(){
+		//var myvar="local variable";
+		alert(myvar);
+
+	}
+</script>
+<input type="button" onclick="sayHelloo()" value="say hello" name="say hello"/>
+<input type="button" onclick="checkscope()" value="check the scope of myvar"/>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_cookie
+	</title>
+	<script type="text/javascript">
+
+
+		function setcookie()
+            {
+               if( document.myform.name.value == "" ){
+                  alert("Enter some value!");
+                  return;
+               }
+               cookievalue= escape(document.myform.name.value) + ";";
+               document.cookie="name=" + cookievalue;
+               document.write ("Setting Cookies : " + "name=" + cookievalue ); return true;
+            }
+
+          function readcookie()
+          {var allcookie=document.cookie;
+          	document.write("allcookies"+allcookie)
+
+            cookiearray=allcookie.split(";");
+
+            for (var i=0;i<cookiearray.length;i++)
+            {
+            	name=cookiearray[i].split("=")[0];
+            	value=cookiearray[i].split("=")[1];
+            	document.write("<br>key is"+ name + "and value is"+value);
+            }
+          }
+	</script>
+</head>
+<body>
+<form name="myform" action="">
+	enter name:<input type="text" name="name" value= "name">
+	<input type="button" value="click" onclick="setcookie()">
+	<input type="button"  value="retrieve" onclick="readcookie()"> 
+</form>
+</body>
+</html>

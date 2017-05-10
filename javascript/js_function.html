@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> js_function_constructor</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var func=new Function ( "x", "y","return x+y");
+
+	function new_func()
+	{
+
+       var v1=parseInt(document.getElementById("num1").value);
+       var v2=parseInt(document.getElementById("num2").value);
+       var  result=func(v1 , v2);
+       alert("the result is"+result);
+	}
+</script>
+
+<input type="text" value="num1" id="num1">
+<input type="text" value="num2" id="num2">
+<input type="button" value="result" onclick="new_func()" >
+
+
+</body>
+</html>

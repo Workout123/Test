@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js array every</title>
+</head>
+<body>
+<script type="text/javascript">
+
+  function isbig(element,index,array) {
+  	// body...
+  	return (element >=10);
+  }
+
+
+	var array=[10,20,30].every(isbig);
+	document.write("the result of every is"+ array);
+
+	var array=[10,20,30,40,2,3,1,5,6,7].filter(isbig);
+	document.write("<br>" +" the filtered big array is"+ array);
+</script>
+</body>
+</html>

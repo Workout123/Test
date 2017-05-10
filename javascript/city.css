@@ -1,0 +1,38 @@
+div {
+	background-color: black;
+	 height: 200px;
+	 width: 100%;
+	color:white;
+	text-align: center;
+}
+
+#demo {
+	background-color: blue;
+	height: 530px;
+	width:50%;
+	float :left;
+}
+.btn {
+    background-color: blue;
+    outline: transparent;
+    border: solid;
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+ }
+
+#demo1 {
+	background-color: green;
+	float : right;
+	height: 100px;
+	width:50%
+	}
+#demo2 {
+	background-color: green;
+	
+	height: 480px;
+	width:100%;
+	}

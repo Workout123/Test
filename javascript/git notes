@@ -1,0 +1,62 @@
+git creation in system
+
+first use the following commands
+sudo apt-get update
+sudo apt-get install git
+
+after git gets downloaded
+check if git got installed correctly using the commands
+git --version
+
+create git account in github.com
+
+use the same username password and mail id
+git config --global user.name "Malavikash3516"
+
+git config --global user.email "malavikahari95@gmail.com"
+
+
+create a new folder in home directory namely practice
+ now use the following commands
+cd practice      ///to get into the practice folder
+git init         // initializes an empty git repository in practice folder
+
+
+now to be a part of a collaborated work ask the owner of the work to send invitation and accept it..
+in github select the folder namely test onto which u are going to contribute... on the n right side select clone/download  a link will be generated using the link u ca clone that repository as follows   git clone https://github.com/Workout123/Test.git
+
+now u have a cloned repository
+
+now move to the directory using 
+cd Test
+
+now create a branch for urself in the collaborated work by
+
+git branch malavika  //creates a new branch
+git checkout malavika   //transfers control to that branch
+
+now use 
+
+git push origin malavika  // to push malavika branch to the github
+
+which will ask github username and password
+
+
+
+nowcreate a sample c file and test it now to push it onto ur github branch
+do the following
+
+git status // shows the c files as untracked
+
+git add a.out c_test.c /// will add these file to the staging area to be tracked
+
+now commit the the branch using
+git commit -m "first c test" //commiting with a meassage
+
+git push origin malavika  /// will push the files with the comit message
+
+now on opening github we can see the new additions
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js_form</title>
+	<script type="text/javascript">
+		
+function validateemail()
+		{
+			var x = document.myform.mailid.value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+    return true;
+		}
+
+function validatename(min, max)
+{
+	var x= document.myform.name.value;
+	if(x.length<1 || x.length>12 || x.length<5)
+		{
+			alert("enter proper UserName it should not be empty and must be within 5 to 12");
+			return false;
+		}
+		return true;
+}
+
+function validpass()
+
+{
+
+	var p=document.myform.pass.value;
+	var cp =document.myform.cpass.value;
+
+if(p.length>0 && cp.length>0 && p == cp)
+{
+	return true;
+
+}
+
+	alert("password donot match");
+	document.myform.cpass.focus();
+	return false;
+}
+
+		function validate()
+		{
+			
+			if (!validatename(5,12))
+			{
+				document.myform.name.focus();
+				return false;
+			}
+			if(!validpass())
+			{
+				return false;
+			}
+
+			if(document.myform.mailid.value == "")
+			{
+				alert("please enter emailid");
+				document.myform.mailid.focus();
+				return false;
+				
+			}
+		     if(document.myform.mailid.value != "")
+
+				{
+				//	document.write("hai");
+					if(!validateemail())
+					return false;
+			}
+			
+
+			
+		
+			return true;
+		
+		
+		}
+	</script>
+</head>
+<body>
+<form name="myform" onsubmit="return validate();" method="post">
+
+	Enter UserName :<input type="text" name="name"><br>
+
+	Enter EmailID :<input type="text" name="mailid"><br>
+	Enter Password:<input type="password" name="pass"><br>
+	Enter confirm Password:<input type="password" name="cpass">
+	<input type="submit" value="submit">
+</form>
+</body>
+</html>
