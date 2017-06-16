@@ -1,0 +1,34 @@
+<% @post.tags.build if @post.tags.empty? %>
+<% form_for(@post) do |post_form| %>
+  <%= post_form.error_messages %>
+
+  <p>
+    <%= post_form.label :name %><br />
+    <%= post_form.text_field :name %>
+  </p>
+  <p>
+    <%= post_form.label :title, "title" %><br />
+    <%= post_form.text_field :title %>
+  </p>
+  <p>
+    <%= post_form.label :content %><br />
+    <%= post_form.text_area :content %>
+  </p>
+  <h2>Tags</h2>
+  <% post_form.fields_for :tags do |tag_form| %>
+    <p>
+      <%= tag_form.label :name, 'Tag:' %>
+      <%= tag_form.text_field :name %>
+    </p>
+    <% unless tag_form.object.nil? || tag_form.object.new_record? %>
+      <p>
+        <%= tag_form.label :_destroy, 'Remove:' %>
+        <%= tag_form.check_box :_destroy %>
+      </p>
+    <% end %>
+  <% end %>
+
+  <p>
+    <%= post_form.submit "Save" %>
+  </p>
+<% end %>
