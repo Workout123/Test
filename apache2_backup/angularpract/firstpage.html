@@ -1,0 +1,125 @@
+<!--FIRST SAMPLE
+<html data-ng-app="">
+	<body data-ng-init="names=['subha','jaya','darshu','vaishu']">
+		Name:
+		<br /> 
+		<input type="text" data-ng-model="name" /> {{ name }}
+
+		<br>
+		<ul>
+				<li data-ng-repeat="personName in names">{{ personName }}</li>
+		</ul>
+			<script src="angular.min.js"></script>
+	</body>
+</html>
+-->
+
+<!-- with filters and objects
+<html data-ng-app="">
+	<body data-ng-init="customers=[{name: 'subha', city:'Paris'},{name: 'jaya', city:'geramny'},{name: 'lachu', city:'US'}]">
+		Name:
+		<br /> 
+		<input type="text" data-ng-model="name" /> {{ name }}
+
+		<br>
+		<ul>
+				<li data-ng-repeat="cust in customers | filter:name |orderBy:city">{{ cust.name | uppercase }} -> {{cust.city | lowercase }}</li>
+		</ul>
+			<script src="angular.min.js"></script>
+	</body>
+</html>
+-->
+
+<!-- View Model 
+
+<html >
+	<body  data-ng-app="myApp">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<div >
+				Name:  <input type="text" data-ng-model="name" /> {{ name }} 		
+		</div>
+
+		<div data-ng-controller="myCtrl">
+			<ul>
+				<li data-ng-repeat="cust in customers | filter:name |orderBy:city">{{ cust.name | uppercase }} -> {{cust.city | lowercase }}</li>
+			</ul>
+		</div>		
+		<script>
+			 var app = angular.module("myApp", []);
+			 app.controller('myCtrl',function($scope)
+			 {
+				$scope.customers=[{name: 'subha', city:'Paris'},{name: 'jaya', city:'geramny'},{name: 'lachu', city:'US'}];
+			 }
+			);
+		</script>		
+	</body>
+</html>
+-->
+<!-- way to add multiple controllers
+<html >
+	<body  data-ng-app="myApp">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<div >
+				Name:  <input type="text" data-ng-model="name" /> {{ name }}	
+		</div>
+		<div data-ng-controller="myCtrl">
+			<ul>
+				<li data-ng-repeat="cust in customers | filter:name |orderBy:city">{{ cust.name | uppercase }} -> {{cust.city | lowercase }}</li>
+			</ul>
+		</div>		
+		<script>
+			 var app = angular.module("myApp", []);
+			 var controllers={};
+			 controllers.myCtrl=function($scope)
+											{
+												$scope.customers=[{name: 'subha', city:'Paris'},{name: 'jaya', city:'geramny'},{name: 'lachu', city:'US'}];
+											};
+			 app.controller(controllers);
+		</script>		
+	</body>
+</html>
+-->
+
+<!--Routes and Views-->
+<html>
+	<body  data-ng-app="myApp">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+		
+		<div data-ng-view></div>		
+		<script>
+			 var app = angular.module("myApp", ['ngRoute']);
+			app.config(function($routeProvider){
+			 	$routeProvider
+			 		.when('/view1',
+			 		{
+			 			controller: 'myCtrl',
+			 			templateUrl: 'view1.html'
+			 		})
+			 		.when('/view2',
+			 		{
+			 			controller: 'myCtrl',
+			 			templateUrl: 'view2.html'
+			 		})
+			 		.otherwise({redirectTo:'/view1'});
+			 });
+			 var controllers={};
+			 controllers.myCtrl=function($scope)
+								{
+									$scope.customers=[{name: 'subha', city:'Paris'},{name: 'jaya', city:'geramny'},{name: 'lachu', city:'US'}];
+
+												$scope.addCustomer= function()
+																	{
+																			$scope.customers.push
+																			(
+																				{
+																					name: $scope.newCustomer.name,
+																					city: $scope.newCustomer.city,
+																				}	
+																			);
+																	};
+								};
+			 app.controller(controllers);
+		</script>		
+	</body>
+</html>

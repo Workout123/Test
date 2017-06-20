@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <script src="http://localhost/LibraryScripts/jquery-3.1.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="custom1.js"></script>
+    <link href="http://localhost/wrap_plugin/slick/slick.css" rel="stylesheet" type="text/css" /> 
+    <script type="text/javascript" src="http://localhost/wrap_plugin/slick/slick.js"></script>
+  </head>
+<body>
+
+<div ng-app="ImgSlider">
+  <div ng-controller="ImgCtrl">
+      <table>
+        <tr ng-repeat="imgs in imgarray">
+          <td class="thumbview">
+            <input type="checkbox" ng-click="toggleSelection(imgs)">
+                  <img ng-src="{{imgs}}" style="height:50px;width:70px;"/>
+            </input>
+          </td>
+        </tr>
+      </table>
+
+      <br/>  
+      <label>Curent slide number: {{currslide}}</label>
+      <br/>
+      <imgslidedynamic imgsc="selection" disp="whenSlideChange">HI<br/></imgslidedynamic>
+
+  </div>
+</div>
+
+</body>
+</html>

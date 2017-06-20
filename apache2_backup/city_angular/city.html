@@ -1,0 +1,17 @@
+<html >
+	<body  data-ng-app="myApp">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="cityjs.js"></script>		
+		<center>
+		<div data-ng-controller="myCtrl">
+			<select data-ng-model="name" >
+				<option data-ng-repeat="city in citylist " value="{{city.value}}"> {{city.key}} </option>
+			</select>
+			<p>{{name}} </p>
+		</div>	
+
+		</center>	
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		
+	</body>
+</html>

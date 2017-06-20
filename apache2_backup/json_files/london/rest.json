@@ -1,0 +1,9 @@
+{
+	"restaurants":
+					[
+						{"names":"The Ledbury","ratings":"*****"},
+						{"names":"bar 61","ratings":"***"},
+						{"names":"Amaya","ratings":"**"}
+					]
+}
+

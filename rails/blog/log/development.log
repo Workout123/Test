@@ -1854,3 +1854,2145 @@ Rendering template within layouts/posts
 Rendering posts/index
   [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
 Completed in 97ms (View: 64, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (20.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+  [4;36;1mSQL (306.5ms)[0m   [0;1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20170616064330')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+  [4;36;1mSQL (342.0ms)[0m   [0;1mALTER TABLE `products` ADD `part_number` varchar(255)[0m
+  [4;35;1mSQL (43.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20170616065146')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+Migrating to RemovePartNumberFromProducts (20170616065531)
+  [4;36;1mSQL (450.8ms)[0m   [0;1mALTER TABLE `products` DROP `part_number`[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20170616065531')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+Migrating to RemovePartNumberFromProducts (20170616065531)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+Migrating to RemovePartNumberFromProducts (20170616065531)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+Migrating to RemovePartNumberFromProducts (20170616065531)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mdescribe `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+Migrating to RemovePartNumberFromProducts (20170616065531)
+Migrating to ExampleMigration (20170616070335)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'products' already exists: CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+Migrating to RemovePartNumberFromProducts (20170616065531)
+Migrating to ExampleMigration (20170616070335)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Key column 'category_id' doesn't exist in table: ALTER TABLE products
+ ADD CONSTRAINT fk_products_categories
+ FOREIGN KEY (category_id)
+ REFERENCES categories(id)
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20170614063626)
+Migrating to CreateComments (20170614122640)
+Migrating to CreateTags (20170614130658)
+Migrating to CreateProducts (20170616064330)
+Migrating to AddPartNumberToProducts (20170616065146)
+Migrating to RemovePartNumberFromProducts (20170616065531)
+Migrating to ExampleMigration (20170616070335)
+  [4;36;1mSQL (350.9ms)[0m   [0;1mALTER TABLE `products` ADD `posts_id` int(11)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Key column 'post_id' doesn't exist in table: ALTER TABLE products
+ ADD CONSTRAINT fk_products_posts
+ FOREIGN KEY (post_id)
+ REFERENCES posts(id)
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mPost Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (0.6ms)[0m   [0;1mINSERT INTO `posts` (`name`, `content`, `updated_at`, `created_at`, `column_1`, `title`) VALUES('John Doe', NULL, '2017-06-16 07:22:28', '2017-06-16 07:22:28', 150, 'dfgfdfgfd')[0m
+  [4;35;1mSQL (56.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-19 12:53:32) [GET]
+  [4;36;1mPost Load (23.1ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 136ms (View: 83, DB: 25) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2017-06-19 12:53:38) [GET]
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;35;1mTag Columns (22.6ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_form (59.2ms)
+Completed in 90ms (View: 57, DB: 24) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2017-06-19 12:53:53) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"sds"}}, "name"=>"fdf", "content"=>"dssd", "title"=>"ds"}}
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mTag Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Rendered posts/_form (7.6ms)
+Completed in 74ms (View: 9, DB: 3) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2017-06-19 12:54:06) [POST]
+  Parameters: {"commit"=>"Save", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc=", "post"=>{"tags_attributes"=>{"0"=>{"name"=>"sds"}}, "name"=>"fdf", "content"=>"dssd", "title"=>"dssdsdsdsd"}}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mTag Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Create (0.3ms)[0m   [0mINSERT INTO `posts` (`name`, `content`, `created_at`, `updated_at`, `column_1`, `title`) VALUES('fdf', 'dssd', '2017-06-19 07:24:06', '2017-06-19 07:24:06', 150, 'dssdsdsdsd')[0m
+  [4;36;1mTag Create (0.4ms)[0m   [0;1mINSERT INTO `tags` (`name`, `created_at`, `updated_at`, `post_id`) VALUES('sds', '2017-06-19 07:24:06', '2017-06-19 07:24:06', 14)[0m
+  [4;35;1mSQL (75.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/14
+Completed in 99ms (DB: 78) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-19 12:54:06) [GET]
+  Parameters: {"id"=>"14"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (18.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+Completed in 55ms (View: 28, DB: 22) | 200 OK [http://localhost/posts/14]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 12:54:10) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+
+ActionView::TemplateError (undefined local variable or method `post' for #<ActionView::Base:0x7fb9d72990d0>) on line #28 of app/views/comments/index.html.erb:
+25: <br />
+26: 
+27: <%= link_to 'New comment', new_post_comment_path(@post) %>
+28: <%= link_to 'Back to Post', post %>
+
+    app/views/comments/index.html.erb:28
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 12:54:35) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+
+ActionView::TemplateError (post_url failed to generate from {:controller=>"posts", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["posts", :id] - are they all satisfied?) on line #28 of app/views/comments/index.html.erb:
+25: <br />
+26: 
+27: <%= link_to 'New comment', new_post_comment_path(@post) %>
+28: <%= link_to 'Back to Post', post_path %>
+
+    (eval):17:in `post_path'
+    app/views/comments/index.html.erb:28
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (2.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 12:54:59) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+Completed in 23ms (View: 9, DB: 5) | 200 OK [http://localhost/posts/14/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2017-06-19 12:55:02) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 30ms (View: 11, DB: 3) | 200 OK [http://localhost/posts/14/comments/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2017-06-19 12:55:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc=", "comment"=>{"body"=>"b bnvbn", "commenter"=>"nbnbh"}, "post_id"=>"14"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO `comments` (`body`, `created_at`, `updated_at`, `commenter`, `post_id`) VALUES('b bnvbn', '2017-06-19 07:25:12', '2017-06-19 07:25:12', 'nbnbh', 14)[0m
+  [4;36;1mSQL (75.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/14/comments/4
+Completed in 98ms (DB: 80) | 302 Found [http://localhost/posts/14/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-19 12:55:12) [GET]
+  Parameters: {"post_id"=>"14", "id"=>"4"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (1.0ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 4 AND (`comments`.post_id = 14)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 23ms (View: 8, DB: 4) | 200 OK [http://localhost/posts/14/comments/4]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 12:55:15) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 24ms (View: 9, DB: 4) | 200 OK [http://localhost/posts/14/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-19 12:55:17) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 72ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/14]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-19 12:55:22) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 35ms (View: 25, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-19 12:55:53) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/14]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 12:55:56) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 29ms (View: 14, DB: 3) | 200 OK [http://localhost/posts/14/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-19 12:55:58) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 15ms (View: 7, DB: 2) | 200 OK [http://localhost/posts/14]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-19 12:56:00) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (68.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (26.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-19 18:04:26) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mPost Columns (133.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (65.7ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 10) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 10) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 320ms (View: 72, DB: 295) | 200 OK [http://localhost/posts/10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-19 18:08:51) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 30ms (View: 22, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2017-06-19 18:08:59) [GET]
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;36;1mTag Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_form (124.9ms)
+Completed in 182ms (View: 126, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-19 18:09:07) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 31ms (View: 22, DB: 3) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-19 18:09:16) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 16ms (View: 7, DB: 3) | 200 OK [http://localhost/posts/14]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 18:11:41) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 15ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/14/comments]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-19 18:12:04) [GET]
+  Parameters: {"post_id"=>"14", "id"=>"4"}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 4 AND (`comments`.post_id = 14)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 62ms (View: 3, DB: 3) | 200 OK [http://localhost/posts/14/comments/4]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 18:13:19) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 19ms (View: 7, DB: 3) | 200 OK [http://localhost/posts/14/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-19 18:14:12) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 23ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/14]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-19 18:50:09) [GET]
+  Parameters: {"post_id"=>"14"}
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 14) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 14) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 24ms (View: 10, DB: 4) | 200 OK [http://localhost/posts/14/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:16:33) [GET]
+  [4;36;1mPost Load (23.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 127ms (View: 75, DB: 25) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:16:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mTag Columns (21.9ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 1) [0m
+Rendered posts/_form (52.5ms)
+Completed in 72ms (View: 39, DB: 25) | 200 OK [http://localhost/posts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2017-06-20 11:16:42) [PUT]
+  Parameters: {"id"=>"1", "post"=>{"tags_attributes"=>{"0"=>{"name"=>""}}, "title"=>"first", "content"=>"riding ", "name"=>"malavika"}, "commit"=>"Save", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Update (9.1ms)[0m   [0mUPDATE `posts` SET `updated_at` = '2017-06-20 05:46:42', `content` = 'riding ' WHERE `id` = 1[0m
+  [4;36;1mSQL (31.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 108ms (DB: 42) | 302 Found [http://localhost/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:16:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (10.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 30ms (View: 10, DB: 12) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:16:44) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:20:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:21:01) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 80ms (View: 19, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2017-06-20 11:21:08) [DELETE]
+  Parameters: {"id"=>"12", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Destroy (0.4ms)[0m   [0;1mDELETE FROM `posts` WHERE `id` = 12[0m
+  [4;35;1mSQL (66.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed in 78ms (DB: 70) | 302 Found [http://localhost/posts/12]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:21:08) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 23ms (View: 16, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:21:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 15ms (View: 7, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:25:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 71ms (View: 60, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:26:27) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 27ms (View: 18, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:26:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mTag Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 1) [0m
+Rendered posts/_form (15.0ms)
+Completed in 26ms (View: 16, DB: 3) | 200 OK [http://localhost/posts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:26:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 22ms (View: 10, DB: 4) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:31:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mTag Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 1) [0m
+Rendered posts/_form (10.6ms)
+Completed in 53ms (View: 11, DB: 2) | 200 OK [http://localhost/posts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:31:38) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 34ms (View: 26, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2017-06-20 11:31:40) [GET]
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;35;1mTag Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_form (10.2ms)
+Completed in 23ms (View: 14, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2017-06-20 11:31:45) [GET]
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;35;1mTag Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_form (13.0ms)
+Completed in 23ms (View: 14, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2017-06-20 11:31:55) [GET]
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;35;1mTag Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_form (10.5ms)
+Completed in 26ms (View: 18, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2017-06-20 11:32:08) [POST]
+  Parameters: {"post"=>{"tags_attributes"=>{"0"=>{"name"=>""}}, "title"=>"dsfsdfsdfsdf", "content"=>"ddfdsfsdfds", "name"=>"dsfsdsd"}, "commit"=>"Save", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO `posts` (`updated_at`, `column_1`, `title`, `created_at`, `name`, `content`) VALUES('2017-06-20 06:02:08', 150, 'dsfsdfsdfsdf', '2017-06-20 06:02:08', 'dsfsdsd', 'ddfdsfsdfds')[0m
+  [4;35;1mSQL (76.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/15
+Completed in 94ms (DB: 78) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:32:08) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mPost Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 15) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 15) [0m
+Completed in 17ms (View: 6, DB: 3) | 200 OK [http://localhost/posts/15]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:37:48) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 79ms (View: 69, DB: 3) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2017-06-20 11:37:50) [GET]
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;36;1mTag Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_form (12.2ms)
+Completed in 21ms (View: 13, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2017-06-20 11:38:07) [POST]
+  Parameters: {"post"=>{"tags_attributes"=>{"0"=>{"name"=>"3516"}}, "title"=>"sdsddssdsd", "content"=>"sdsds", "name"=>"jdjd"}, "commit"=>"Save", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mTag Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (0.5ms)[0m   [0;1mINSERT INTO `posts` (`updated_at`, `column_1`, `title`, `created_at`, `name`, `content`) VALUES('2017-06-20 06:08:07', 150, 'sdsddssdsd', '2017-06-20 06:08:07', 'jdjd', 'sdsds')[0m
+  [4;35;1mTag Create (0.3ms)[0m   [0mINSERT INTO `tags` (`post_id`, `updated_at`, `created_at`, `name`) VALUES(16, '2017-06-20 06:08:07', '2017-06-20 06:08:07', '3516')[0m
+  [4;36;1mSQL (154.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/16
+Completed in 172ms (DB: 158) | 302 Found [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:38:07) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 16) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 16) [0m
+Completed in 15ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/16]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:38:11) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 82ms (View: 73, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:38:16) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 16) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 16) [0m
+Completed in 17ms (View: 7, DB: 2) | 200 OK [http://localhost/posts/16]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:38:21) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 35ms (View: 25, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2017-06-20 11:38:26) [DELETE]
+  Parameters: {"id"=>"16", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 16) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Destroy (0.3ms)[0m   [0;1mDELETE FROM `posts` WHERE `id` = 16[0m
+  [4;35;1mSQL (60.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed in 71ms (DB: 63) | 302 Found [http://localhost/posts/16]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:38:26) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2017-06-20 11:39:17) [GET]
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+  [4;35;1mTag Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+Rendered posts/_form (11.8ms)
+Completed in 20ms (View: 13, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2017-06-20 11:39:36) [POST]
+  Parameters: {"post"=>{"tags_attributes"=>{"0"=>{"name"=>"455555"}}, "title"=>"ddddddd", "content"=>"ddddd", "name"=>"sdsdsddds"}, "commit"=>"Save", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mTag Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Create (0.7ms)[0m   [0mINSERT INTO `posts` (`updated_at`, `column_1`, `title`, `created_at`, `name`, `content`) VALUES('2017-06-20 06:09:36', 150, 'ddddddd', '2017-06-20 06:09:36', 'sdsdsddds', 'ddddd')[0m
+  [4;36;1mTag Create (0.4ms)[0m   [0;1mINSERT INTO `tags` (`post_id`, `updated_at`, `created_at`, `name`) VALUES(17, '2017-06-20 06:09:36', '2017-06-20 06:09:36', '455555')[0m
+  [4;35;1mSQL (210.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/17
+Completed in 239ms (DB: 214) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:39:36) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+Completed in 19ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:39:39) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+Completed in 56ms (View: 46, DB: 2) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2017-06-20 11:39:41) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 30ms (View: 12, DB: 5) | 200 OK [http://localhost/posts/17/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2017-06-20 11:39:53) [POST]
+  Parameters: {"post_id"=>"17", "comment"=>{"body"=>"sdsdsdsdsd", "commenter"=>"dddddddddddssd"}, "commit"=>"Create", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.3ms)[0m   [0mINSERT INTO `comments` (`body`, `commenter`, `post_id`, `updated_at`, `created_at`) VALUES('sdsdsdsdsd', 'dddddddddddssd', 17, '2017-06-20 06:09:53', '2017-06-20 06:09:53')[0m
+  [4;36;1mSQL (96.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/17/comments/5
+Completed in 116ms (DB: 99) | 302 Found [http://localhost/posts/17/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-20 11:39:53) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 21ms (View: 8, DB: 4) | 200 OK [http://localhost/posts/17/comments/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 11:39:56) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 60ms (View: 48, DB: 2) | 200 OK [http://localhost/posts/17/comments/5/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2017-06-20 11:39:58) [PUT]
+  Parameters: {"id"=>"5", "post_id"=>"17", "comment"=>{"body"=>"sdsdsdsdsd", "commenter"=>"dddddddddddssd"}, "commit"=>"Update", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/17/comments/5
+Completed in 19ms (DB: 6) | 302 Found [http://localhost/posts/17/comments/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-20 11:39:58) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 18ms (View: 4, DB: 4) | 200 OK [http://localhost/posts/17/comments/5]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:40:00) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 20ms (View: 8, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;35;1mSQL (4.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:40:03) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 16ms (View: 6, DB: 7) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:40:05) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 28ms (View: 20, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:40:12) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 18ms (View: 8, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:40:15) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mTag Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT * FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (17.6ms)
+Completed in 30ms (View: 19, DB: 5) | 200 OK [http://localhost/posts/17/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#update (for 127.0.0.1 at 2017-06-20 11:40:28) [PUT]
+  Parameters: {"id"=>"17", "post"=>{"tags_attributes"=>{"0"=>{"id"=>"4", "_destroy"=>"1", "name"=>"4555559"}}, "title"=>"ddddddd", "content"=>"ddddd", "name"=>"sdsdsddds"}, "commit"=>"Save", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM `tags` WHERE (`tags`.`id` IN ('4')) AND (`tags`.post_id = 17) [0m
+  [4;35;1mTag Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTag Destroy (0.4ms)[0m   [0mDELETE FROM `tags` WHERE `id` = 4[0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM `tags` WHERE (`tags`.post_id = 17) [0m
+  [4;35;1mSQL (42.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/17
+Completed in 110ms (DB: 46) | 302 Found [http://localhost/posts/17]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:40:28) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.7ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 17ms (View: 8, DB: 4) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:40:31) [GET]
+  [4;36;1mPost Load (6.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 44ms (View: 28, DB: 8) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:40:33) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mTag Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (16.3ms)
+Completed in 30ms (View: 17, DB: 4) | 200 OK [http://localhost/posts/17/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:45:32) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 77ms (View: 68, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:45:34) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:45:39) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 26ms (View: 10, DB: 4) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:46:00) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:47:03) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 72ms (View: 57, DB: 4) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:47:36) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 26ms (View: 11, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index to #<comment:0x7f0a4c0478f8> (for 127.0.0.1 at 2017-06-20 11:47:38) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+
+ActionView::MissingTemplate (Missing template comments/index.erb in view path app/views):
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/malavika/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:50:23) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 29ms (View: 14, DB: 4) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2017-06-20 11:50:26) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 74ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17/comments/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2017-06-20 11:50:34) [POST]
+  Parameters: {"post_id"=>"17", "comment"=>{"body"=>"sdsdsdsd", "commenter"=>"sdsdsdssd"}, "commit"=>"Create", "authenticity_token"=>"uMK5yScQ5VkU4j1DnGR2I/3ptiKvyQYQ78zC6w7CBcc="}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Create (0.6ms)[0m   [0mINSERT INTO `comments` (`body`, `commenter`, `post_id`, `updated_at`, `created_at`) VALUES('sdsdsdsd', 'sdsdsdssd', 17, '2017-06-20 06:20:34', '2017-06-20 06:20:34')[0m
+  [4;36;1mSQL (150.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/17/comments/6
+Completed in 166ms (DB: 154) | 302 Found [http://localhost/posts/17/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-20 11:50:34) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 20ms (View: 4, DB: 3) | 200 OK [http://localhost/posts/17/comments/6]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:50:39) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 26ms (View: 12, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:50:42) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 13ms (View: 6, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:57:42) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mTag Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (16.9ms)
+Completed in 32ms (View: 18, DB: 5) | 200 OK [http://localhost/posts/17/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:57:45) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 21ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:57:49) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mTag Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (11.7ms)
+Completed in 20ms (View: 12, DB: 3) | 200 OK [http://localhost/posts/17/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:57:51) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 70ms (View: 61, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:58:16) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 33ms (View: 24, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:58:18) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mTag Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (11.3ms)
+Completed in 21ms (View: 12, DB: 3) | 200 OK [http://localhost/posts/17/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:58:22) [GET]
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:58:25) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 72ms (View: 9, DB: 4) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:58:29) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 25ms (View: 12, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 11:58:33) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 31ms (View: 13, DB: 5) | 200 OK [http://localhost/posts/17/comments/6/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:58:35) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:58:41) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mTag Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (13.3ms)
+Completed in 74ms (View: 14, DB: 3) | 200 OK [http://localhost/posts/17/edit]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:58:46) [GET]
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (380.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 418ms (View: 29, DB: 382) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 11:58:52) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;35;1mTag Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (14.9ms)
+Completed in 29ms (View: 16, DB: 4) | 200 OK [http://localhost/posts/17/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 11:58:55) [GET]
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Completed in 35ms (View: 26, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:58:57) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 16ms (View: 8, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:58:59) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 29ms (View: 11, DB: 4) | 200 OK [http://localhost/posts/17/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 11:59:02) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 28ms (View: 10, DB: 4) | 200 OK [http://localhost/posts/17/comments/5/edit]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-20 11:59:08) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (1.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 22ms (View: 5, DB: 6) | 200 OK [http://localhost/posts/17/comments/5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 11:59:11) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 66ms (View: 8, DB: 3) | 200 OK [http://localhost/posts/17/comments/5/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:59:12) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 23ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (1.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 11:59:54) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 23ms (View: 12, DB: 5) | 200 OK [http://localhost/posts/17]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 11:59:54) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.7ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Completed in 24ms (View: 11, DB: 4) | 200 OK [http://localhost/posts/17/comments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2017-06-20 11:59:57) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/comments
+Rendering comments/new
+Completed in 70ms (View: 6, DB: 2) | 200 OK [http://localhost/posts/17/comments/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:00:00) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 25ms (View: 11, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 12:00:02) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 36ms (View: 19, DB: 4) | 200 OK [http://localhost/posts/17/comments/6/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-20 12:00:04) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 21ms (View: 5, DB: 4) | 200 OK [http://localhost/posts/17/comments/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:00:07) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 69ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 12:00:09) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:00:11) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 39ms (View: 27, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:00:21) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 30ms (View: 22, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 12:00:24) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mTag Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 17) [0m
+Rendered posts/_form (13.9ms)
+Completed in 73ms (View: 14, DB: 4) | 200 OK [http://localhost/posts/17/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:00:26) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 39ms (View: 29, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 12:00:28) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:00:30) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 29ms (View: 12, DB: 5) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 12:00:34) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 78ms (View: 11, DB: 3) | 200 OK [http://localhost/posts/17/comments/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:00:38) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 28ms (View: 12, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 12:00:41) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 20ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:00:43) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 30ms (View: 22, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:01:04) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 78ms (View: 20, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2017-06-20 12:01:06) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 15) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+  [4;36;1mTag Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `tags` WHERE (`tags`.post_id = 15) [0m
+Rendered posts/_form (17.8ms)
+Completed in 31ms (View: 19, DB: 4) | 200 OK [http://localhost/posts/15/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:01:08) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 37ms (View: 27, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 12:01:10) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 22ms (View: 9, DB: 4) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:01:12) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 12:01:16) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 29ms (View: 13, DB: 3) | 200 OK [http://localhost/posts/17/comments/5/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-20 12:01:18) [GET]
+  Parameters: {"id"=>"5", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 5 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 22ms (View: 4, DB: 3) | 200 OK [http://localhost/posts/17/comments/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:01:20) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.6ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 24ms (View: 11, DB: 4) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 12:01:22) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 17ms (View: 8, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:01:24) [GET]
+  [4;36;1mPost Load (0.5ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 35ms (View: 26, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2017-06-20 12:01:52) [GET]
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 37ms (View: 27, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 12:01:54) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 22ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:01:56) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 21ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 12:01:59) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 29ms (View: 13, DB: 3) | 200 OK [http://localhost/posts/17/comments/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2017-06-20 12:02:01) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/show
+Completed in 16ms (View: 4, DB: 3) | 200 OK [http://localhost/posts/17/comments/6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2017-06-20 12:02:04) [GET]
+  Parameters: {"id"=>"6", "post_id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.8ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 6 AND (`comments`.post_id = 17)) [0m
+Rendering template within layouts/comments
+Rendering comments/edit
+Completed in 26ms (View: 9, DB: 4) | 200 OK [http://localhost/posts/17/comments/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2017-06-20 12:02:06) [GET]
+  Parameters: {"post_id"=>"17"}
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/comments
+Rendering comments/index
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 25ms (View: 9, DB: 3) | 200 OK [http://localhost/posts/17/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2017-06-20 12:02:12) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 17) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.5ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 17) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 22ms (View: 10, DB: 3) | 200 OK [http://localhost/posts/17]

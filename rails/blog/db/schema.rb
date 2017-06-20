@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20170614130658) do
+ActiveRecord::Schema.define(:version => 20170616065531) do
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"
@@ -26,6 +26,13 @@ ActiveRecord::Schema.define(:version => 20170614130658) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "column_1",   :limit => 2, :default => 150
+  end
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "tags", :force => true do |t|

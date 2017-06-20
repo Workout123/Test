@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="city_css.css">
+	</head>
+	<body>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<div ng-app='CityList'>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+			<script src="city_rest_js.js"></script>
+			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+			<center class="full" ng-controller='ListCtrl'>
+
+			<div class='listpart'>
+				Choose your city : 
+				<select ng-model="namelist" ng-change="giveDescp()" >
+					<option ng-repeat="city in citylist " value="{{city}}"> {{city}} </option>
+				</select>
+				<br/><br/>
+			</div>
+
+			<div class="directivepart">
+				Using the directive part: <br/>
+				
+				<citydirective name="{{namelist}}"></citydirective>
+			</div>
+			
+			<!--<div class='nondirective'>
+				Without the directive: <br/>
+				<table id="mytable" style="display:none" >
+					<tr >
+						<td>Description</td>
+						<td ng-model="citydescp">{{citydescp}}</td>
+					</tr>
+					<tr>
+						<td>Restaurants</td>
+						<td>
+							<table>
+								<tr ng-repeat= "place in restaurants">
+									<td>{{place.names}}</td>
+									<td>{{place.ratings}}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					
+				</table>
+				<br/><br/>
+			</div>-->
+
+			
+	
+			</center>	
+		</div>
+	</body>
+</html>
+
+
