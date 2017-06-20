@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script src="/var/www/html/city/angular.min.js"></script>
+	<script src="/var/www/html/city/jquery-3.1.1.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="Dot.js"></script>
+ 	<div ng-app="MyApp">
+  		<div ng-controller="AppCtrl">
+    		<div jq-slider model="sliderValue" min="25" max="75" step="5"></div>
+    		<p>The slider's value is: <input ng-model="sliderValue"/></p>
+  		</div>
+	</div>
+</body>
+</html>

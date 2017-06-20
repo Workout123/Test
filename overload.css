@@ -1,0 +1,24 @@
+.button {
+    background-color: pink;
+    height: 25px;
+    //outline: none;
+    //border: none;
+    color: black;    
+    padding:0px 5px 5px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    position:absolute;
+}
+#button_column{
+  top: 30px;
+  bottom: 10px;
+   width: 500px;
+   //height:500px;
+   padding: 0px 20px 20px;
+   //text-align: center;
+   float: left;  
+   background-color:silver;
+   position: relative;
+}
+

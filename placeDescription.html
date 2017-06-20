@@ -1,0 +1,43 @@
+<html>
+<body>
+<p> <center><b> <u> DESCRIPTION ABOUT PLACES </u></b> </center> </p>
+<script>
+function Bangalore()
+{
+ document.getElementById("print").innerHTML="<br>Bangalore, officially known as Bengaluru is the capital of the Indian state of Karnataka..";
+}
+function Chennai()
+{
+ document.getElementById("print").innerHTML="<br>Chennai, formerly known as Madras is the capital of the Indian state of Tamil Nadu..";
+}
+function Hyderabad()
+{
+ document.getElementById("print").innerHTML="<br>Hyderabad is the capital of the southern Indian state of Telangana..";
+}
+
+var button1 = document.createElement("button");
+button1.innerHTML = "Bangalore";
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(button1);
+button1.onclick=Bangalore;
+
+linebreak = document.createElement("br");
+body.appendChild(linebreak);
+
+var button2 = document.createElement("button");
+button2.innerHTML = "Chennai";
+body.appendChild(button2);
+button2.onclick=function(){Chennai()};
+
+linebreak = document.createElement("br");
+body.appendChild(linebreak);
+
+var button3 = document.createElement("button");
+button3.innerHTML = "Hyderabad";
+body.appendChild(button3);
+button3.onclick=function(){Hyderabad()};
+
+</script>
+<center> <p id="print"></p> </center>
+</body>
+</html>

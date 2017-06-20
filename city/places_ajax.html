@@ -1,0 +1,19 @@
+<html>
+<h2> Description about places</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<div  ng-app="places" ng-controller="cityctrl">
+<select ng-model="dropdown" ng-options="city.key for city in mydesc"></select>
+<center>{{dropdown.value}}</center>
+</div>
+<script>
+var place = angular.module('places', []);
+place.controller('cityctrl',function($scope, $http) {
+    $http.get("http://localhost/city/description.json").then(function(response) {
+        $scope.mydesc = response.data.desc;
+    });
+  });
+</script>
+</body>
+</html>
+

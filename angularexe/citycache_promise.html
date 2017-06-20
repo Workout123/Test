@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="head"><h3> <center>DESCRIPTION ABOUT CITIES</center></h3></div>
+<link rel="stylesheet" type="text/css" href="citycache_promise.css">
+<script src="angular.min.js"></script>
+<script src="jquery-3.1.1.js"></script>
+<script src="city_service.js"></script>
+</head>
+<body ng-app="places" ng-controller="cityctrl">
+<div class="col">
+<center><br>
+<b>Choose a city:</b>
+<select id="dropdown" ng-model="dropcity" ng-options="city for city in cityname" ng-change=display()>
+</select>
+</div>
+<div class="col">
+<br><center> <div description> </div></center>
+<br><center><restaurant></restaurant></center>
+</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+ "restaurant":[
+		{"name":"Athiti", "rating":"Good"},
+		{"name":"Hari bhavan","rating":"Average"},
+		{"name":"Kuppanna","rating":"Excellent"}
+	     ]
+}

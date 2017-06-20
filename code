@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 void main1()
+=======
+
+void main4()
+>>>>>>> 48f7b9a... main4 chnge
 {
 editing my func
 }
