@@ -1,0 +1,48 @@
+1) DRY – “Don’t Repeat Yourself" , Convention over Configuration, REST
+
+2) Rails provides a full stack of components for creating web applications, including:
+
+	Action Controller	- manages controllers
+	Action View			- manages views
+	Active Record		- base for models
+	Active Resource		- managing the connection between business objects an RESTful web services
+	Railties			- Railties is the core Rails code that builds new Rails applications
+
+3) "Tweet.find(3)" ---> Will go fetch "tweets" table for id 3
+
+4) 	C - 	t = Tweet.new
+			t.key = value
+			t.save
+	
+	R - 	Tweet.find(1,2,3)  --> will return array of tweets with id 1,2 and 3
+			Tweet.where().order().find()  --> method chaining
+
+	U - 	t = Tweet.find(2)
+			t.attributes(hash)
+			t.save
+
+	D - 	t = Tweet.find(2)
+			t.destroy
+			Tweet.destroy_all
+
+5) Models are saved under app/models/<name>.rb
+	
+	class Tweet < ActiveRecord::Base
+		validates_presence_of :status    --> makes sure status to be set for all tweets
+	end
+
+6) t.errors.messages
+
+7) Relationships in Models
+	
+		has_many : tweets 		--> in Zombie model 
+		belongs_to :Zombie  	--> in Tweet model
+
+	ash = Zombie.find(1)
+	t = Tweet.create(status: "", zombie: ash)
+
+8) .erb files (embedded ruby)
+	<% executes whatever ruby code written here %>
+	<%= prints the return value of the ruby code written here %>
+
+	<%= link_to( text_to_show, model_instance )  %>  --> <% link_to( tweet.zombie.name , tweet.zombie)
