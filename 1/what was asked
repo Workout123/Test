@@ -1,0 +1,4 @@
+- Dropdown has city names
+- click on one and description of name to be displayed onto its right (ajax call)
+- closure
+- external json file
