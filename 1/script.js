@@ -1,3 +1,4 @@
+"use strict";
 var PROJECT1 = {}
 
 PROJECT1.main = function()
@@ -8,35 +9,51 @@ PROJECT1.main = function()
                   Chennai : "Description of Chennai.."
                 };
 
-  var getDescriptionTag = function()
-  {
-    return document.getElementById("description");
-  }
-
-  var showDescription = function()
-  {
-    console.log(this);
-    getDescriptionTag().innerHTML = city_description[this.value];
-  }
-
   var createSelectTagForCities = function()
   {
-    //console.log("create..");
-    var select = document.createElement("select");
+    var descriptionNode, select, defaultOption, options, city;
 
-    for(var city in city_description)
+    descriptionNode = document.getElementById("description");
+    select = document.createElement("select");
+    defaultOption = document.createElement("option");
+    setAttributes(defaultOption, { disabled: true, selected: true, value: ""});
+    defaultOption.appendChild(document.createTextNode('Select City'));
+
+    select.appendChild(defaultOption);
+
+    for(city in city_description)
     {
-      var options = document.createElement("option");
+      options = document.createElement("option");
       options.value = city.toString();
       options.innerHTML = city;
-      options.addEventListener("click", showDescription, false);
       select.appendChild(options);
     }
 
-    var descriptionDiv = getDescriptionTag();
-    document.body.insertBefore(select,descriptionDiv);
+    select.addEventListener("change", function(ev)
+      {
+        var selectNode, selected;
+
+        selectNode = ev && ev.target;
+        if(selectNode)
+        {
+          selected = selectNode.options[selectNode.selectedIndex];
+          descriptionNode.innerHTML = city_description[selected.value];
+        }
+      });
+    document.body.appendChild(select);
 
   }();
+
+  function setAttributes(element, attributes={})
+  {
+      if(element)
+      {
+        for(var attr in attributes)
+        {
+          element.setAttribute(attr, attributes[attr]);
+        }
+      }
+  }
 
 
 }
