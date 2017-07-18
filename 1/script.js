@@ -4,10 +4,14 @@ var PROJECT1 = {}
 PROJECT1.main = function()
 {
   //console.log("main..");
-  var city_description = {
-                  Bengaluru : "Description of Bengauru...",
-                  Chennai : "Description of Chennai.."
-                };
+  var city_description =
+      {
+          Bengaluru: "Benagaluru is the capital of the Indian state of Karnataka. It has a population of about 8.42 million",
+          Chennai: "Chennai is the capital of the Indian state of Tamil Nadu. Located on the Coromandel Coast off the Bay of Bengal",
+          Hyderabad: "Hyderabad is the capital of the southern Indian state of Telangana and de jure capital of Andhra Pradesh.",
+          Amaravati: "Amaravati is the de facto capital city of the Indian state of Andhra Pradesh.",
+          Mumbai: "Mumbai is the capital city of the Indian state of Maharashtra. It is the most populous city in India."
+      };
 
   var createSelectTagForCities = function()
   {
