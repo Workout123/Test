@@ -60,13 +60,15 @@
       {
           if (this.readyState == 4 && this.status == 200)
           {
-            city_description = JSON.parse(xhr.responseText);
-            xhr.close();
+            var data = xhr.responseText;
+            //console.log(data);
+            city_description = JSON.parse(data.toString());
+            //console.log(typeof(city_description));
             createSelectTagForCities();
           }
       }
       xhr.open("GET","data.json",true);
-      xhr.send();
+      xhr.send(null);
     }
 
     window.onload = fetchJsonData;
