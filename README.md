@@ -1,3 +1,5 @@
+NOTE: Please do run this on web server (apache) as the code uses ajax calls (CORS problems).
+
 Assignments done:
 
 1)
