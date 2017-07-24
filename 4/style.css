@@ -1,0 +1,8 @@
+@media screen and (max-width: 480px)
+{
+  #ball
+  {
+    width: 100px;
+    height: 100px;
+  }
+}

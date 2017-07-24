@@ -1,7 +1,7 @@
 (function(){
   var timer = 0;
-  var timeoutDuration = 50;
-  var offset = 10;
+  var timeoutDuration = 10;
+  var offset = 1;
   var ball = null;
   var ballMovingRight = true;
 
@@ -34,12 +34,7 @@
       }
     });
   }
-
-  function createHeavyLoad(num)
-  {
-
-  }
-
+  
   function moveRight()
   {
     ballMovingRight = true;
