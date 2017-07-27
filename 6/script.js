@@ -1,8 +1,8 @@
 (function(){
 
   var init = function(){
-    $("#dropdown").applyCustomStyle();
+    console.log($("#dropdown").applyCustomStyle());
   }
-  
+
   window.addEventListener("load",init);
 })()
