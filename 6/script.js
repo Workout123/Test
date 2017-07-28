@@ -1,7 +1,9 @@
 (function(){
 
   var init = function(){
-    console.log($("#dropdown").applyCustomStyle());
+    $("#dropdown").applyCustomStyle();
+    $("container").applyCustomStyle();
+
   }
 
   window.addEventListener("load",init);

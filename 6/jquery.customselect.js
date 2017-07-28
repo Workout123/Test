@@ -2,12 +2,16 @@
 (function( $ ){
   $.fn.applyCustomStyle = function()
   {
+    if(!this.is("select")) return this;
+
     this.addClass("hide");
     var $selectedObject = this;
     var $centerBox = $("<div>",{id:"centerbox"});
 
-    var $dataMin = Number.MAX_VALUE;
-    var $dataMax = 0;
+    var $dataMin = $("select#dropdown option").eq(0).val();
+    var $lengthOfArray = $("select#dropdown option").length
+    var $dataMax = $("select#dropdown option").eq($lengthOfArray-1).val();
+    
     $("select#dropdown option").each(function(){
       var $value = parseInt($(this).val());
       if($value > $dataMax) $dataMax = $value;
@@ -15,17 +19,18 @@
     })
     $centerBox.html(this.val());
 
-    var $negButton = $("<input>",{type:"button","class":"custombutton",value:"-"});
-    this.after($negButton, $centerBox, $negButton.clone().val("+"));
+    var $negButton = $("<input>",{type:"button","class":"custombutton minus",value:"-"});
+    var $posButton = $("<input>",{type:"button","class":"custombutton plus",value:"+"});
+    this.after($negButton, $centerBox, $posButton );
 
-    $(".custombutton").click(function()
+    $(".custombutton").click(function(ev)
     {
       var $price = parseInt($centerBox.html());
       var $finalPrice = null;
 
-      if(this.value == "+" && $price < $dataMax)
+      if($(this).hasClass("plus") && $price < $dataMax)
         $finalPrice = $price + 1;
-      else if(this.value == "-" && $price > $dataMin)
+      else if($(this).hasClass("minus") && $price > $dataMin)
         $finalPrice = $price - 1;
 
       if($finalPrice != null)
