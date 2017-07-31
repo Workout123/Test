@@ -8,14 +8,13 @@
     var $selectedObject = this;
     var $centerBox = $("<div>",{id:"centerbox"});
 
-    var $dataMin = $("select#dropdown option").eq(0).val();
-    var $lengthOfArray = $("select#dropdown option").length
-    var $dataMax = $("select#dropdown option").eq($lengthOfArray-1).val();
-    
+    var $dataMin = parseInt(this.data("min"));
+    var $dataMax = parseInt(this.data("max"));
+
     $centerBox.html(this.val());
 
     var $negButton = $("<input>",{type:"button","class":"custombutton minus",value:"-"});
-    var $posButton = $("<input>",{type:"button","class":"custombutton plus",value:"+"});
+    var $posButton = $("<input>",{type:"button","class":"custombutton plus",value:"+" });
     this.after($negButton, $centerBox, $posButton );
 
     $(".custombutton").click(function(ev)

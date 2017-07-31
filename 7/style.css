@@ -1,0 +1,50 @@
+div.hide, select.hide
+{
+    display: none;
+}
+
+.custombutton
+{
+  background-color: #4CAF50;
+  width:40px;
+  height:40px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  float:left;
+  margin: 5px;
+}
+
+#centerbox
+{
+  font-weight: bold;
+  float:left;
+  text-align: center;
+  padding: 15px;
+  background-color: #d4d6d8;
+}
+
+#price_tag
+{
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+}
+
+.grayout, input:disabled
+{
+  background-color: gray;
+  cursor:not-allowed;
+}
+
+#tooltip
+{
+  position:absolute;
+  z-index:10;
+  background-color: #d9dde0 ;
+  display: none;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+  cursor:not-allowed;
+}
