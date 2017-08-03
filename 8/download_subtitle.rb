@@ -31,21 +31,32 @@ def getAllVideoFileNames(path)
 	return videoFiles
 end
 
-
-# SubDB/1.0 (Name/Version; Github repo)
-def downloadSubs(hashValue)
+def getSubtitleLanguages(hashValue)
 	header = { 'User-Agent' => 'SubDB/1.0 (Nameless-Downloader /0.0; https://github.com/Workout123/Test)' }
 
 	http = Net::HTTP.new "api.thesubdb.com"
-	res = http.send_request("GET", "/?action=download&hash=" + hashValue + "&language=en", nil, header)
+	res = http.send_request("GET", "/?action=search&hash=" + hashValue, nil, header)
+	if res.code == "200"
+		return res.body.split(",")
+	end
+	return []
+end
+
+
+# SubDB/1.0 (Name/Version; Github repo)
+def downloadSubs(hashValue, lang="en")
+	header = { 'User-Agent' => 'SubDB/1.0 (Nameless-Downloader /0.0; https://github.com/Workout123/Test)' }
+
+	http = Net::HTTP.new "api.thesubdb.com"
+	res = http.send_request("GET", "/?action=download&hash=" + hashValue + "&language="+lang.to_s, nil, header)
 
 	return res.code == "200"? res.body : nil;
 end
 
 
-def writeToFile(file_name, subs)
+def writeToFile(file_name, subs, lang)
 	actual_name = file_name.match(/(.*)\.\w{3,4}/).captures
-	File.open(actual_name.to_s+'.srt', 'w') {|f| f.write(subs) }
+	File.open(actual_name.to_s + "[" + lang.to_s + "].srt", 'w') {|f| f.write(subs) }
 end
 
 
@@ -54,20 +65,27 @@ def getSubsForFolder(path)
 	video_files_in_folder = getAllVideoFileNames(path)
 	num_of_video_files = video_files_in_folder.length
 	puts "Number of video files found: " + num_of_video_files.to_s
-	success = 0
+	failures = 0
 
 	video_files_in_folder.each do |file|
 		full_path = path+file
-		subs = downloadSubs(get_hash(full_path))
-		if(subs)
-			writeToFile(full_path, subs)
-			puts "(+) " + file ;
-			success += 1
-		else
+		hashValue = get_hash(full_path)
+
+		languages = getSubtitleLanguages(hashValue)
+		if(languages.length == 0)
 			puts "(-) " + file
+			failures += 1
+		end
+		languages.each do |lang|
+			subs = downloadSubs(hashValue, lang)
+			if(subs)
+				writeToFile(full_path, subs, lang)
+				puts "(+) " + file + " --- " + lang
+			end
 		end
 	end
-	puts "Success rate: " + (success * 100 / num_of_video_files).to_s unless num_of_video_files == 0
+
+	puts "Success rate : " + ((num_of_video_files-failures)*100/num_of_video_files).to_s + "%"
 end
 
 path = ARGV[0]? ARGV[0] : Dir.pwd
