@@ -17,14 +17,20 @@ end
 
 def getAllVideoFileNames(path)
 	videoFiles = []
-	Dir.new(path.to_s+'.').each do |file|
-		if file.end_with?(".mp4", ".mkv", ".mpg", "3gp", "flv")
-			videoFiles.push(file)
+	begin 
+		Dir.new(path.to_s).each do |file|
+			if file.end_with?(".mp4", ".mkv", ".mpg", "3gp", "flv")
+				videoFiles.push(file)
+			end
 		end
+	rescue Exception => e
+		puts e.message
+		exit
 	end
 
 	return videoFiles
 end
+
 
 # SubDB/1.0 (Name/Version; Github repo)
 def downloadSubs(hashValue)
@@ -46,7 +52,8 @@ end
 def getSubsForFolder(path)
 	puts "Searching for video files under " + path
 	video_files_in_folder = getAllVideoFileNames(path)
-	puts "Number of video files found: " + video_files_in_folder.length.to_s
+	num_of_video_files = video_files_in_folder.length
+	puts "Number of video files found: " + num_of_video_files.to_s
 	success = 0
 
 	video_files_in_folder.each do |file|
@@ -54,13 +61,13 @@ def getSubsForFolder(path)
 		subs = downloadSubs(get_hash(full_path))
 		if(subs)
 			writeToFile(full_path, subs)
-			puts "(+) Found subtitle for " + full_path ;
+			puts "(+) " + file ;
 			success += 1
 		else
-			puts "(-) Could NOT find subtitle for " + full_path
+			puts "(-) " + file
 		end
 	end
-	puts "Success rate: " + (success * 100 /video_files_in_folder.length).to_s
+	puts "Success rate: " + (success * 100 / num_of_video_files).to_s unless num_of_video_files == 0
 end
 
 path = ARGV[0]? ARGV[0] : Dir.pwd
