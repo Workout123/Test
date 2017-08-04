@@ -4,6 +4,7 @@ class Item < ActiveRecord::Base
   validates_numericality_of :mrp, :greater_than_or_equal_to => 0
   validates_numericality_of :price, :greater_than_or_equal_to => 0
   validate :price_should_be_lesser_or_equal_to_mrp
+  has_many :reviews
 
   def price_should_be_lesser_or_equal_to_mrp()
     if(mrp < price)

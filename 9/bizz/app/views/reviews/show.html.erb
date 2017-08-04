@@ -1,0 +1,14 @@
+<h1>Review on <%= @item.name %></h1>
+
+<p>
+  <b>Reviewer:</b>
+  <%=h @review.reviewer %>
+</p>
+
+<p>
+  <b>Review:</b>
+  <%=h @review.body %>
+</p>
+
+<%= link_to 'Edit', edit_item_review_path(@item, @review) %> |
+<%= link_to 'Back', item_reviews_path(@item) %>

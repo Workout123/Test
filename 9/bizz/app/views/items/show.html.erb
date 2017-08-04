@@ -8,7 +8,29 @@
     </tr>
     <tr class="item_table_tr">
       <td class="item_table_td_left">MRP</td>
-      <td class="item_table_td"><%= @item.mrp %></td>
+      <td class="item_table_td item_mrp"><%= @item.mrp %></td>
+    </tr>
+    <tr class="item_table_tr">
+      <td class="item_table_td_left">Description</td>
+      <td class="item_table_td"><%= @item.description %></td>
     </tr>
   </table>
+  <br/>
+  <div class="item_show_name">Reviews</div>
+  <div class="review_container">
+    <% if @item.reviews.length == 0 %>
+      <div>No reviews yet. <%= link_to "Write one >>", new_item_review_path(@item) %></div>
+    <% else %>
+      <% @item.reviews.find(:all, :limit => 2).each do |review| %>
+        <table>
+          <tr class="item_table_tr">
+            <td class="item_table_td_left"><%= review.reviewer %> :&nbsp</td>
+            <td class="item_table_td"><%= review.body %></td>
+          </tr>
+        </table>
+      <% end %>
+      <br/>
+      <%= link_to "See all reviews (" + ((@item.reviews.length>=2)? @item.reviews.length - 2 : 0).to_s+ " more) >>", item_reviews_path(@item) %>
+    <% end %>
+  </div>
 </div>

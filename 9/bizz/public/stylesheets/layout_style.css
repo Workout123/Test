@@ -39,6 +39,12 @@ div.item_mrp {
   text-decoration: line-through;
 }
 
+td.item_mrp
+{
+  text-decoration: line-through;
+  font-size: 90%;
+}
+
 img.item_image {
   object-fit: contain;
   position: center;
