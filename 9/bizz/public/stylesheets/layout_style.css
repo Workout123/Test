@@ -1,0 +1,92 @@
+div#nav {
+  float: left;
+  width: 20%;
+  border: 1px solid gray;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+div#rightcontainer {
+  float: right;
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+div.item_box {
+  border: 1px solid gray;
+  box-sizing: border-box;
+  float: left;
+  width: 20%;
+  height: 250px;
+}
+
+div.item_name {
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+div.item_price {
+  float:left;
+  padding-left: 20%;
+  font-size: 130%;
+}
+
+div.item_mrp {
+  float:right;
+  padding-right: 20%;
+  text-decoration: line-through;
+}
+
+img.item_image {
+  object-fit: contain;
+  position: center;
+  height:75%;
+  width:100%;
+}
+
+div.item_show_container
+{
+  text-align: center;
+  background-color: #eaecef;
+  box-sizing: border-box;
+  float:left;
+  width: 40%;
+}
+
+img.item_show_image
+{
+  width:20%;
+  float:left;
+}
+
+div.item_show_name
+{
+  background-color: #b8bbc1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td.item_table_td_left
+{
+  box-sizing: border-box;
+  background-color: #d0d5db;
+}
+
+td.item_table_td
+{
+  box-sizing: border-box;
+}
+
+tr.item_table_tr
+{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+table.item_table
+{
+  width: 100%;
+  box-sizing: border-box;
+}
