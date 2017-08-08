@@ -13,7 +13,12 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.xml
   def show
-    @item = Item.find(params[:id])
+    begin
+      @item = Item.find(params[:id])
+    rescue ActiveRecord::RecordNotFound => e
+      render :json => { :errors => "Item with ID "+params[:id] + " could not be found" }, :status => 404
+      return;
+    end
 
     respond_to do |format|
       format.html # show.html.erb

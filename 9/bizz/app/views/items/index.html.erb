@@ -1,5 +1,5 @@
 <% @items.each do |item| %>
-  <% content_tag(:a, :href => "items/"+item.id.to_s) do %>
+  <% content_tag(:a, :href => "/items/"+item.id.to_s) do %>
     <div class="item_box" data-id="<%= item.id %>">
       <div class="item_name"><%=h item.name %></div>
       <img class="item_image" src="/images/default.jpg" ></img>

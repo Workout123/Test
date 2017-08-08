@@ -19,7 +19,7 @@
   <div class="item_show_name">Reviews</div>
   <div class="review_container">
     <% if @item.reviews.length == 0 %>
-      <div>No reviews yet. <%= link_to "Write one >>", new_item_review_path(@item) %></div>
+      <div>No reviews. Write one</div>
     <% else %>
       <% @item.reviews.find(:all, :limit => 2).each do |review| %>
         <table>
@@ -31,6 +31,23 @@
       <% end %>
       <br/>
       <%= link_to "See all reviews (" + ((@item.reviews.length>=2)? @item.reviews.length - 2 : 0).to_s+ " more) >>", item_reviews_path(@item) %>
+    <% end %>
+  </div>
+  <div class="item_show_name">Write review</div>
+  <div id="write_review">
+    <% form_for([@item, @item.reviews.build]) do |f| %>
+      <%= f.error_messages %>
+      <table>
+        <tr>
+          <td><%= f.label :reviewer %></td>
+          <td><%= f.text_field :reviewer %></td>
+        </tr>
+        <tr>
+          <td><%= f.label :body %></td>
+          <td><%= f.text_field :body, :rows => 3 %></td>
+        </tr>
+      </table>
+      <%= f.submit "Submit" %>
     <% end %>
   </div>
 </div>
