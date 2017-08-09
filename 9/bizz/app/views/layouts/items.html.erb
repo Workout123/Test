@@ -5,7 +5,10 @@
   </head>
   <body>
     <p style="color: green"><%= notice %></p>
-    <div id="nav"><a href="/">Home</a></div>
+    <div id="nav">
+      <a href="/">Home</a> <br/>
+      <%= link_to "Back", '', :onclick => "history.back()"%>
+    </div>
     <div id="rightcontainer">
       <%= yield %>
     </div>

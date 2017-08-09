@@ -11407,3 +11407,1586 @@ Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:11:11) [GET]
 Rendering template within layouts/items
 Rendering items/index
 Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:29:45) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:29:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:30:05) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 49ms (View: 6, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:30:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.1ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:33:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.1ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:34:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 54ms (View: 49, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:34:08) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 20ms (View: 8, DB: 1) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:35:20) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+ERROR: compiling _run_erb_app47views47layouts47items46html46erb RAISED compile error
+/home/ajaybl/bizz/app/views/layouts/items.html.erb:10: syntax error, unexpected ':', expecting ')'
+... link_to "Back", '#', onclick: "alert('Hello world!'); retur...
+                              ^
+/home/ajaybl/bizz/app/views/layouts/items.html.erb:10: syntax error, unexpected ',', expecting ')'
+...Hello world!'); return false", class: "nav_link" ).to_s); @o...
+                              ^
+Function body:           def _run_erb_app47views47layouts47items46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n  <head>\n    "
+
+; @output_buffer.concat(( stylesheet_link_tag "layout_style" ).to_s); @output_buffer.concat "\n\n  </head>\n  <body>\n    <p style=\"color: green\">"
+
+
+
+; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</p>\n    <div id=\"nav\">\n      <a href=\"/\">Home</a> <br/>\n      "
+
+
+; @output_buffer.concat(( link_to "Back", '#', onclick: "alert('Hello world!'); return false", class: "nav_link" ).to_s); @output_buffer.concat "\n    </div>\n    <div id=\"rightcontainer\">\n      "
+
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n    </div>\n\n  </body>\n</html>\n"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ajaybl/bizz/app/views/layouts/items.html.erb:21:in `compile!'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:352:in `_render_with_layout'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `synchronize'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/handler/webrick.rb:14:in `run'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ajaybl/bizz/app/views/layouts/items.html.erb:10: syntax error, unexpected ':', expecting ')'
+... link_to "Back", '#', onclick: "alert('Hello world!'); retur...
+                              ^
+/home/ajaybl/bizz/app/views/layouts/items.html.erb:10: syntax error, unexpected ',', expecting ')'
+...Hello world!'); return false", class: "nav_link" ).to_s); @o...
+                              ^) on line #10 of app/views/layouts/items.html.erb:
+7:     <p style="color: green"><%= notice %></p>
+8:     <div id="nav">
+9:       <a href="/">Home</a> <br/>
+10:       <%= link_to "Back", '#', onclick: "alert('Hello world!'); return false", class: "nav_link" %>
+11:     </div>
+12:     <div id="rightcontainer">
+13:       <%= yield %>
+
+    app/views/layouts/items.html.erb:21:in `compile!'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:35:36) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:35:48) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:35:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 74ms (View: 18, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:35:52) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:35:53) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 4) [0m
+Completed in 30ms (View: 18, DB: 0) | 200 OK [http://localhost/items/4]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:35:54) [GET]
+  [4;35;1mItem Load (1.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 16ms (View: 7, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:35:59) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:36:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:36:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+Completed in 7ms (View: 1, DB: 0) | 404 Not Found [http://localhost/items/6]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:36:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:36:06) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+Completed in 6ms (View: 1, DB: 0) | 404 Not Found [http://localhost/items/6]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:36:39) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:38:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:38:45) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 64ms (View: 53, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#new (for 127.0.0.1 at 2017-08-08 12:38:49) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/new
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://localhost/items/2/reviews/new]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:38:54) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 22ms (View: 12, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:38:55) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:38:59) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#create (for 127.0.0.1 at 2017-08-08 12:39:07) [POST]
+  Parameters: {"authenticity_token"=>"UIWpZAt7b9hBhhB+qrxWqYnwQKU6lFi8vQqAYi9dUbc=", "commit"=>"Submit", "review"=>{"reviewer"=>"feqgq", "body"=>"gewgwfgqe"}, "item_id"=>"2"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;35;1mReview Create (0.3ms)[0m   [0mINSERT INTO "reviews" ("created_at", "reviewer", "updated_at", "item_id", "body") VALUES('2017-08-08 07:09:07', 'feqgq', '2017-08-08 07:09:07', 2, 'gewgwfgqe')[0m
+Redirected to http://localhost:3000/items/2/reviews
+Completed in 146ms (DB: 1) | 302 Found [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:39:08) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 55ms (View: 47, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:39:14) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.5ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#new (for 127.0.0.1 at 2017-08-08 12:39:15) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/new
+Completed in 20ms (View: 6, DB: 0) | 200 OK [http://localhost/items/2/reviews/new]
+
+
+Processing ReviewsController#create (for 127.0.0.1 at 2017-08-08 12:39:18) [POST]
+  Parameters: {"authenticity_token"=>"UIWpZAt7b9hBhhB+qrxWqYnwQKU6lFi8vQqAYi9dUbc=", "commit"=>"Create", "review"=>{"reviewer"=>"faf", "body"=>"vadgveqwf"}, "item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;35;1mReview Create (0.3ms)[0m   [0mINSERT INTO "reviews" ("created_at", "reviewer", "updated_at", "item_id", "body") VALUES('2017-08-08 07:09:18', 'faf', '2017-08-08 07:09:18', 2, 'vadgveqwf')[0m
+Redirected to http://localhost:3000/items/2/reviews
+Completed in 124ms (DB: 1) | 302 Found [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:39:19) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#new (for 127.0.0.1 at 2017-08-08 12:39:24) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/new
+Completed in 21ms (View: 7, DB: 0) | 200 OK [http://localhost/items/2/reviews/new]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:39:30) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 52ms (View: 46, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.1ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:39:32) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.5ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:57) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 9) [0m
+Completed in 7ms (View: 1, DB: 0) | 404 Not Found [http://localhost/items/9]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:39:59) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 59ms (View: 54, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:44:58) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:45:00) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:45:07) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:45:12) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 4) [0m
+Completed in 54ms (View: 49, DB: 0) | 200 OK [http://localhost/items/4]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:45:26) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:45:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:51:32) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Rendering template within layouts/items
+Rendering shared/500 (500)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:51:35) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Rendering template within layouts/items
+Rendering shared/500 (500)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:51:48) [GET]
+Rendering template within layouts/items
+Rendering items/index
+Rendering template within layouts/items
+Rendering shared/500 (500)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:52:03) [GET]
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #1 of app/views/items/index.html.erb:
+1: <% @items.each do |item| %>
+2:   <% content_tag(:a, :href => "/items/"+item.id.to_s) do %>
+3:     <div class="item_box" data-id="<%= item.id %>">
+4:       <div class="item_name"><%=h item.name %></div>
+
+    app/views/items/index.html.erb:1
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:52:55) [GET]
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #1 of app/views/items/index.html.erb:
+1: <% @items.each do |item| %>
+2:   <% content_tag(:a, :href => "/items/"+item.id.to_s) do %>
+3:     <div class="item_box" data-id="<%= item.id %>">
+4:       <div class="item_name"><%=h item.name %></div>
+
+    app/views/items/index.html.erb:1
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:53:02) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:53:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 71ms (View: 63, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-08 12:53:21) [GET]
+
+NameError (uninitialized constant ActionController::ResourceNotFound):
+  app/controllers/items_controller.rb:2
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:54:10) [GET]
+Rendering template within layouts/items
+Rendering items/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #1 of app/views/items/index.html.erb:
+1: <% @items.each do |item| %>
+2:   <% content_tag(:a, :href => "/items/"+item.id.to_s) do %>
+3:     <div class="item_box" data-id="<%= item.id %>">
+4:       <div class="item_name"><%=h item.name %></div>
+
+    app/views/items/index.html.erb:1
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:54:30) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:55:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:55:45) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 9) [0m
+Completed in 7ms (View: 1, DB: 0) | 404 Not Found [http://localhost/items/9]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:55:52) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#new (for 127.0.0.1 at 2017-08-08 12:55:56) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/items/2/reviews/new]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 12:55:59) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:56:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#show (for 127.0.0.1 at 2017-08-08 12:56:06) [GET]
+  Parameters: {"item_id"=>"2", "id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews"."id" = 2 AND ("reviews".item_id = 2)) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Review with ID=2 AND ("reviews".item_id = 2)):
+  app/controllers/reviews_controller.rb:10:in `show'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#show (for 127.0.0.1 at 2017-08-08 12:56:11) [GET]
+  Parameters: {"item_id"=>"2", "id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews"."id" = 3 AND ("reviews".item_id = 2)) [0m
+Rendering template within layouts/items
+Rendering reviews/show
+Completed in 18ms (View: 7, DB: 0) | 200 OK [http://localhost/items/2/reviews/3]
+
+
+Processing ReviewsController#edit (for 127.0.0.1 at 2017-08-08 12:56:16) [GET]
+  Parameters: {"item_id"=>"2", "id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews"."id" = 3 AND ("reviews".item_id = 2)) [0m
+Rendering template within layouts/items
+Rendering reviews/edit
+Completed in 64ms (View: 54, DB: 0) | 200 OK [http://localhost/items/2/reviews/3/edit]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:56:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 12:56:31) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:58:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 12:58:10) [GET]
+  Parameters: {"id"=>"80"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 80) [0m
+Completed in 7ms (View: 1, DB: 0) | 404 Not Found [http://localhost/items/80]
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO "items" ("mrp", "created_at", "price", "description", "name", "updated_at") VALUES(45.34, '2017-08-08 07:30:19', 36.87, NULL, 'Hdna jnafnq', '2017-08-08 07:30:19')[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:00:20) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO "items" ("mrp", "created_at", "price", "description", "name", "updated_at") VALUES(75.34, '2017-08-08 07:30:46', 72.87, NULL, 'Njknfq bjab', '2017-08-08 07:30:46')[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:00:47) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO "items" ("mrp", "created_at", "price", "description", "name", "updated_at") VALUES(95.54, '2017-08-08 07:31:22', 82.87, NULL, 'Nekdm mkfa', '2017-08-08 07:31:22')[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:01:23) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:01:26) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:01:28) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 5) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 5) [0m
+Completed in 60ms (View: 53, DB: 0) | 200 OK [http://localhost/items/5]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:01:32) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:01:34) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:01:37) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/items/7]
+
+
+Processing ReviewsController#create (for 127.0.0.1 at 2017-08-08 13:01:41) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Submit", "review"=>{"reviewer"=>"bhfdaj", "body"=>"jmkldfganwkbnwk"}, "item_id"=>"7"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+  [4;35;1mReview Create (0.3ms)[0m   [0mINSERT INTO "reviews" ("created_at", "reviewer", "updated_at", "item_id", "body") VALUES('2017-08-08 07:31:41', 'bhfdaj', '2017-08-08 07:31:41', 7, 'jmkldfganwkbnwk')[0m
+Redirected to http://localhost:3000/items/7/reviews
+Completed in 201ms (DB: 1) | 302 Found [http://localhost/items/7/reviews]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 13:01:41) [GET]
+  Parameters: {"item_id"=>"7"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/items/7/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:01:46) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:01:50) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;35;1mReview Load (0.1ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:01:52) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:02:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:02:21) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 6) [0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/items/6]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:02:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.5ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:02:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:02:48) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:02:49) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:02:49) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:02:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 17ms (View: 12, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:02:58) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 4) [0m
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/items/4]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:11:01) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:11:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:11:26) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 13:12:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 13:12:12) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 15:58:19) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 15:58:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 15:58:22) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 19ms (View: 8, DB: 1) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 15:58:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 68ms (View: 60, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 15:58:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 15:58:29) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:22:43) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:31:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 54ms (View: 47, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:33:55) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:33:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;35;1mReview Load (0.1ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:33:59) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:38:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.6ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 27ms (View: 15, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:38:16) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:38:17) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-08 16:38:32) [GET]
+
+ActionController::RoutingError (No route matches "/2" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 16:38:44) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Item without an ID):
+  app/controllers/reviews_controller.rb:4:in `index'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#1 (for 127.0.0.1 at 2017-08-08 16:38:47) [GET]
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#2 (for 127.0.0.1 at 2017-08-08 16:38:50) [GET]
+
+ActionController::UnknownAction (No action responded to 2. Actions: create, destroy, edit, index, new, show, and update):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#5 (for 127.0.0.1 at 2017-08-08 16:38:53) [GET]
+
+ActionController::UnknownAction (No action responded to 5. Actions: create, destroy, edit, index, new, show, and update):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#6 (for 127.0.0.1 at 2017-08-08 16:38:56) [GET]
+
+ActionController::UnknownAction (No action responded to 6. Actions: create, destroy, edit, index, new, show, and update):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-08 16:39:07) [GET]
+
+ActionController::RoutingError (No route matches "/review/5" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 16:39:13) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Item without an ID):
+  app/controllers/reviews_controller.rb:4:in `index'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#3 (for 127.0.0.1 at 2017-08-08 16:39:27) [GET]
+
+ActionController::UnknownAction (No action responded to 3. Actions: create, destroy, edit, index, new, show, and update):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-08 16:39:58) [GET]
+
+ActionController::RoutingError (No route matches "/posts/2/reviews/3" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-08 16:40:03) [GET]
+
+ActionController::RoutingError (No route matches "/posts/2/" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-08 16:40:07) [GET]
+
+ActionController::RoutingError (No route matches "/item/2/" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:40:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 70ms (View: 12, DB: 1) | 200 OK [http://localhost/items/2/]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 16:40:15) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.5ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#destroy (for 127.0.0.1 at 2017-08-08 16:40:20) [DELETE]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "item_id"=>"2", "id"=>"16"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews"."id" = 16 AND ("reviews".item_id = 2)) [0m
+  [4;35;1mReview Destroy (13.0ms)[0m   [0mDELETE FROM "reviews" WHERE "id" = 16[0m
+Redirected to http://localhost:3000/items/2/reviews
+Completed in 264ms (DB: 13) | 302 Found [http://localhost/items/2/reviews/16]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 16:40:21) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#destroy (for 127.0.0.1 at 2017-08-08 16:40:24) [DELETE]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "item_id"=>"2", "id"=>"3"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;35;1mReview Load (0.1ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews"."id" = 3 AND ("reviews".item_id = 2)) [0m
+  [4;36;1mReview Destroy (0.2ms)[0m   [0;1mDELETE FROM "reviews" WHERE "id" = 3[0m
+Redirected to http://localhost:3000/items/2/reviews
+Completed in 127ms (DB: 0) | 302 Found [http://localhost/items/2/reviews/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 16:40:24) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:40:33) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:40:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:45:40) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:45:53) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/items/7]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 16:45:56) [GET]
+  Parameters: {"item_id"=>"7"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/items/7/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:45:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:46:01) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-08 16:46:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-08 16:46:10) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#new (for 127.0.0.1 at 2017-08-08 16:46:15) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/new
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/items/2/reviews/new]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:46:17) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:52:12) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:52:30) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:52:33) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 16:56:05) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 17:21:08) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
