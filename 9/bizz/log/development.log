@@ -12990,3 +12990,1640 @@ Processing ItemsController#index (for 127.0.0.1 at 2017-08-08 17:21:08) [GET]
 Rendering template within layouts/items
 Rendering items/index
 Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:14:36) [GET]
+  [4;35;1mItem Load (16.1ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 49ms (View: 27, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:14:46) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:14:56) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 54ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:15:00) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:15:01) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:15:42) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:15:52) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:17:09) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:17:10) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:17:14) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:17:21) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:17:25) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:17:50) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:18:00) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:18:01) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:18:22) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 52ms (View: 46, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:18:28) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:19:32) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:20:06) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:20:16) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:20:23) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:20:24) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:20:47) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:21:01) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:21:15) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:21:30) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:22:13) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:22:42) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:22:47) [GET]
+  [4;35;1mItem Load (42.9ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 58ms (View: 4, DB: 43) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:22:59) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:07) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:14) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:15) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:23) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:33) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:39) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:45) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:23:55) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:24:06) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:24:12) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:24:23) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:24:28) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:24:35) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:24:50) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:25:00) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:00) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:01) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:16) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:27) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:32) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:54) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 61ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:55) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:26:56) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:27:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.1ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 86ms (View: 81, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:27:19) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 53ms (View: 47, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:27:36) [GET]
+  [4;36;1mItem Load (1.1ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:27:42) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:27:51) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:30:00) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:31:37) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:32:45) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:33:50) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:34:01) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:34:04) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:34:09) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:34:46) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 29ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:34:52) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:34:56) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:35:26) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:35:36) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:37:18) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:37:53) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:38:20) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:38:39) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:39:07) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:39:35) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:39:56) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:40:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:41:29) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:42:07) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 48ms (View: 42, DB: 1) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:42:10) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:45:34) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:46:46) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:47:05) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:47:26) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:48:03) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:48:35) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:49:02) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:49:26) [GET]
+  [4;35;1mItem Load (1.0ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:49:26) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:49:51) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:51:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:51:23) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:51:25) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 6) [0m
+Completed in 23ms (View: 14, DB: 0) | 200 OK [http://localhost/items/6]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:51:28) [GET]
+  [4;36;1mItem Load (1.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 68ms (View: 57, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:51:39) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 6) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 6) [0m
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/items/6]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:51:42) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:53:54) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:54:21) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 45ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:54:41) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:55:10) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:56:45) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:58:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 60ms (View: 10, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 10:58:16) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:58:18) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#create (for 127.0.0.1 at 2017-08-09 10:58:26) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Submit", "review"=>{"reviewer"=>"pojknda", "body"=>"njanjfnakn njknqnkf nknfqknf,amfpighqfay9"}, "item_id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+  [4;36;1mReview Create (76.3ms)[0m   [0;1mINSERT INTO "reviews" ("created_at", "reviewer", "updated_at", "item_id", "body") VALUES('2017-08-09 05:28:26', 'pojknda', '2017-08-09 05:28:26', 3, 'njanjfnakn njknqnkf nknfqknf,amfpighqfay9')[0m
+Redirected to http://localhost:3000/items/3/reviews
+Completed in 269ms (DB: 76) | 302 Found [http://localhost/items/3/reviews]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 10:58:26) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 51ms (View: 6, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:58:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 10:58:34) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ReviewsController#destroy (for 127.0.0.1 at 2017-08-09 10:58:41) [DELETE]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "item_id"=>"3", "id"=>"20"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews"."id" = 20 AND ("reviews".item_id = 3)) [0m
+  [4;36;1mReview Destroy (14.3ms)[0m   [0;1mDELETE FROM "reviews" WHERE "id" = 20[0m
+Redirected to http://localhost:3000/items/3/reviews
+Completed in 140ms (DB: 15) | 302 Found [http://localhost/items/3/reviews/20]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 10:58:41) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 47ms (View: 6, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ReviewsController#new (for 127.0.0.1 at 2017-08-09 10:58:42) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/new
+Completed in 20ms (View: 8, DB: 0) | 200 OK [http://localhost/items/3/reviews/new]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 10:58:44) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 10:58:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:58:47) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:59:00) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:59:01) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 10:59:04) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:00:42) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:00:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:00:46) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:00:49) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 4) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 4) [0m
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/items/4]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:00:52) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:00:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:00:55) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 24ms (View: 9, DB: 1) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:00:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:01:02) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:01:04) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:02:14) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:08:16) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 33ms (View: 23, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:10:06) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:10:17) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:10:58) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:07) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:21) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:22) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:28) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:29) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:33) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 44ms (View: 39, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:39) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:43) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:55) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:55) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:11:56) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:12:37) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:13:04) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:13:09) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:13:26) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:13:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:13:30) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:14:11) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:14:12) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:14:14) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:14:32) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:14:54) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:15:27) [GET]
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 58ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:16:10) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:16:39) [GET]
+  [4;35;1mItem Load (0.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:17:03) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:17:08) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 42ms (View: 37, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:17:14) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:17:31) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:17:53) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:18:17) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 61ms (View: 54, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:18:34) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:18:41) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:20:02) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:20:26) [GET]
+  [4;35;1mItem Load (2.6ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 56ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:20:50) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:22:01) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:23:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:23:44) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 47ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:23:54) [GET]
+  Parameters: {"item_id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/items/3/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:23:57) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:24:02) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:24:05) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:24:59) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 5) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 5) [0m
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/items/5]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:25:01) [GET]
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:25:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:25:07) [GET]
+  [4;35;1mItem Load (0.8ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:37:29) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:37:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:38:10) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 25ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:38:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:38:14) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 65ms (View: 11, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:38:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 24ms (View: 15, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:38:19) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 5) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 5) [0m
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://localhost/items/5]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:38:22) [GET]
+  [4;36;1mItem Load (0.8ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:38:24) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 57ms (View: 51, DB: 1) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:38:26) [GET]
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:38:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.3ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:38:29) [GET]
+  [4;36;1mItem Load (1.0ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:38:31) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 7) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.2ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 7) LIMIT 2[0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/items/7]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:38:32) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:45:39) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:45:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 3) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 3) LIMIT 2[0m
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://localhost/items/3]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:45:43) [GET]
+  [4;35;1mItem Load (0.7ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:45:53) [GET]
+  [4;36;1mItem Load (0.7ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 60ms (View: 51, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:47:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.5ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:47:53) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#destroy (for 127.0.0.1 at 2017-08-09 11:47:59) [DELETE]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "item_id"=>"2", "id"=>"17"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;35;1mReview Load (0.2ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews"."id" = 17 AND ("reviews".item_id = 2)) [0m
+  [4;36;1mReview Destroy (4.6ms)[0m   [0;1mDELETE FROM "reviews" WHERE "id" = 17[0m
+Redirected to http://localhost:3000/items/2/reviews
+Completed in 110ms (DB: 5) | 302 Found [http://localhost/items/2/reviews/17]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:48:00) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 20ms (View: 10, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#new (for 127.0.0.1 at 2017-08-09 11:48:04) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/new
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/items/2/reviews/new]
+
+
+Processing ReviewsController#create (for 127.0.0.1 at 2017-08-09 11:48:11) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Create", "review"=>{"reviewer"=>"jdj`", "body"=>"hdn dnwj"}, "item_id"=>"2"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;35;1mReview Create (0.3ms)[0m   [0mINSERT INTO "reviews" ("created_at", "reviewer", "updated_at", "item_id", "body") VALUES('2017-08-09 06:18:11', 'jdj`', '2017-08-09 06:18:11', 2, 'hdn dnwj')[0m
+Redirected to http://localhost:3000/items/2/reviews
+Completed in 158ms (DB: 1) | 302 Found [http://localhost/items/2/reviews]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:48:11) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 20ms (View: 12, DB: 0) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:48:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) LIMIT 2[0m
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/items/2]
+  [4;36;1mSQL (14.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mReview Load (0.4ms)[0m   [0;1mSELECT * FROM "reviews" LIMIT 1[0m
+  [4;35;1mReview Load (0.4ms)[0m   [0mSELECT * FROM "reviews" LIMIT 1[0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;35;1mItem Load (0.5ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+  [4;36;1mItem Load (0.5ms)[0m   [0;1mSELECT * FROM "items" LIMIT 1[0m
+  [4;35;1mReview Load (0.6ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-09 11:54:54) [GET]
+  Parameters: {"id"=>"67"}
+  [4;35;1mItem Load (0.1ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 67) [0m
+Completed in 77ms (View: 72, DB: 0) | 404 Not Found [http://localhost/items/67]
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:56:42) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.6ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 23ms (View: 13, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-09 11:56:53) [GET]
+
+ActionController::RoutingError (No route matches "/items/2/review/2" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-09 11:56:56) [GET]
+
+ActionController::RoutingError (No route matches "/items/2/review/1" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReviewsController#index (for 127.0.0.1 at 2017-08-09 11:56:58) [GET]
+  Parameters: {"item_id"=>"2"}
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" WHERE ("items"."id" = 2) [0m
+Rendering template within layouts/items
+Rendering reviews/index
+  [4;35;1mReview Load (0.3ms)[0m   [0mSELECT * FROM "reviews" WHERE ("reviews".item_id = 2) [0m
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/items/2/reviews]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-09 11:58:23) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/]

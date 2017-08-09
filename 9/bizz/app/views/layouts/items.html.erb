@@ -6,8 +6,8 @@
   <body>
     <p style="color: green"><%= notice %></p>
     <div id="nav">
-      <a href="/">Home</a> <br/>
-      <%= link_to "Back", '', :onclick => "history.back()"%>
+      <a href="/"> <div id="nav_home">Home</div> </a>
+      <%= link_to "<div id='nav_back'>Back</div>", '', :onclick => "history.back()", :id => "nav_back"%>
     </div>
     <div id="rightcontainer">
       <%= yield %>
