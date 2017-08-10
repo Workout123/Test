@@ -46,3 +46,24 @@
 	<%= prints the return value of the ruby code written here %>
 
 	<%= link_to( text_to_show, model_instance )  %>  --> <% link_to( tweet.zombie.name , tweet.zombie)
+
+
+----------------------------
+
+*) Partial template - to eliminate code dup in views (ex: _form.html.erb)
+   Filters - to eliminate code dup in controller (ex: before_filter :filter_name, :only => [:show, :edit])
+
+
+
+------------------------------------------------------------
+
+Tips:
+
+- script/console --sandbox
+- Access last evaluated result with "_"
+- reload! within console to restart
+- Post.where(created_at: 10.days.ago..Time.now).to_sql
+- Conditional associations
+- "rake notes" to list notes # TODO, # FIXME, # OPTIMIZE
+- time = Benchmark.ms{ Post.all } to evaluate time taken for that query
+
