@@ -20015,3 +20015,1041 @@ Completed in 6ms (DB: 0) | 302 Found [http://localhost/sessions/login]
 Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:40:12) [GET]
 Rendering sessions/index
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:54:41) [GET]
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:54:56) [GET]
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:55:03) [GET]
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:55:04) [GET]
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:55:08) [GET]
+Rendering sessions/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:55:21) [GET]
+Rendering sessions/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:55:47) [GET]
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:57:17) [GET]
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:57:19) [GET]
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:57:34) [GET]
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:57:35) [GET]
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:57:41) [GET]
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:57:42) [GET]
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:58:53) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:59:02) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:59:50) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:59:51) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 15:59:57) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:00:10) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:00:13) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:00:26) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:00:50) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:01:02) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:01:07) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:01:11) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:01:17) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:03:37) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:03:39) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:03:40) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:03:40) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:03:40) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:04:02) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 42ms (View: 40, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:04:14) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:05:02) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:05:31) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:05:32) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:05:57) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:05:59) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:06:03) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:06:06) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:06:23) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 61ms (View: 59, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:06:48) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:06:50) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:06:55) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:07:00) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:07:09) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:07:16) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:07:27) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:09:28) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:11:19) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:13:47) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:14:56) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:17:17) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:18:09) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:18:27) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:06) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:07) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:10) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:13) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:14) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:21) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:37) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:19:45) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:20:07) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:21:27) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:21:58) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:22:14) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:22:14) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:22:19) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:22:38) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:22:43) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:23:08) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:23:20) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:23:21) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:23:21) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:24:27) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 46ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:24:48) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:25:39) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:25:41) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:11) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:18) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:24) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:28) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:36) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:48) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:51) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:27:58) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:03) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:11) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:16) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:21) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:28) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:33) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:38) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:43) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:28:55) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:29:14) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:29:21) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:30:22) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:30:24) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:30:43) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:30:44) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:31:41) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:31:55) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:32:12) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:32:30) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:32:55) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+ERROR: compiling _run_erb_app47views47sessions47index46html46erb RAISED compile error
+/home/ajaybl/bizz/app/views/sessions/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+... btn-primary btn-block", :id="login-button"  ).to_s); @outpu...
+                              ^
+Function body:           def _run_erb_app47views47sessions47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"login-container\">\n  <p style=\"color: red\">"
+; @output_buffer.concat(( notice ).to_s); @output_buffer.concat "</p>\n  <div id=\"login-head\">Login</div>\n  "
+
+;  form_for :account, :url => { :action => "login" } do |f| ; @output_buffer.concat "\n    <div id=\"login-username\" class=\"login-textbox\"> "
+; @output_buffer.concat(( f.text_field :username, :required => "true", :class => "form-control", :placeholder => "Username").to_s); @output_buffer.concat " </div>\n    <div id=\"login-password\" class=\"login-textbox\"> "
+; @output_buffer.concat(( f.password_field :password , :class => "form-control", :placeholder => "Password").to_s); @output_buffer.concat " </div>\n    "
+; @output_buffer.concat(( f.submit "Go", :class => "btn btn-primary btn-block", :id="login-button"  ).to_s); @output_buffer.concat "\n  "
+;  end ; @output_buffer.concat "\n</div>\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ajaybl/bizz/app/views/sessions/index.html.erb:13:in `compile!'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/head.rb:9:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/methodoverride.rb:24:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `synchronize'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/lock.rb:11:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:47:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `each'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/urlmap.rb:41:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/content_length.rb:13:in `call'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/handler/webrick.rb:48:in `service'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rack-1.1.6/lib/rack/handler/webrick.rb:14:in `run'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ajaybl/bizz/app/views/sessions/index.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+... btn-primary btn-block", :id="login-button"  ).to_s); @outpu...
+                              ^) on line #7 of app/views/sessions/index.html.erb:
+4:   <% form_for :account, :url => { :action => "login" } do |f| %>
+5:     <div id="login-username" class="login-textbox"> <%= f.text_field :username, :required => "true", :class => "form-control", :placeholder => "Username"%> </div>
+6:     <div id="login-password" class="login-textbox"> <%= f.password_field :password , :class => "form-control", :placeholder => "Password"%> </div>
+7:     <%= f.submit "Go", :class => "btn btn-primary btn-block", :id="login-button"  %>
+8:   <% end %>
+9: </div>
+
+    app/views/sessions/index.html.erb:13:in `compile!'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:33:03) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:33:23) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:33:24) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:33:33) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:33:38) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:33:44) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#login (for 127.0.0.1 at 2017-08-29 16:34:15) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Go", "account"=>{"username"=>"admin", "password"=>""}}
+  [4;36;1mAccount Load (45.4ms)[0m   [0;1mSELECT * FROM "accounts" WHERE (username = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/sessions
+Completed in 243ms (DB: 45) | 302 Found [http://localhost/sessions/login]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:34:16) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:34:52) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#login (for 127.0.0.1 at 2017-08-29 16:34:56) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Go", "account"=>{"username"=>"df", "password"=>""}}
+  [4;35;1mAccount Load (0.4ms)[0m   [0mSELECT * FROM "accounts" WHERE (username = 'df') LIMIT 1[0m
+Redirected to http://localhost:3000/sessions
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/sessions/login]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:34:56) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:35:15) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#login (for 127.0.0.1 at 2017-08-29 16:35:17) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Go", "account"=>{"username"=>"gwrg", "password"=>""}}
+  [4;36;1mAccount Load (0.6ms)[0m   [0;1mSELECT * FROM "accounts" WHERE (username = 'gwrg') LIMIT 1[0m
+Redirected to http://localhost:3000/sessions
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/sessions/login]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:35:17) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:35:42) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#login (for 127.0.0.1 at 2017-08-29 16:35:44) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Go", "account"=>{"username"=>"ageq", "password"=>""}}
+  [4;35;1mAccount Load (0.4ms)[0m   [0mSELECT * FROM "accounts" WHERE (username = 'ageq') LIMIT 1[0m
+Redirected to http://localhost:3000/sessions
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/sessions/login]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:35:45) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#login (for 127.0.0.1 at 2017-08-29 16:36:03) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Go", "account"=>{"username"=>"admin", "password"=>"fW"}}
+  [4;36;1mAccount Load (0.6ms)[0m   [0;1mSELECT * FROM "accounts" WHERE (username = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/sessions
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/sessions/login]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:36:03) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#login (for 127.0.0.1 at 2017-08-29 16:36:12) [POST]
+  Parameters: {"authenticity_token"=>"sbl3r6pCQKWZSREDv38cUwP9/n2FzPGmHCQPxFTKsko=", "commit"=>"Go", "account"=>{"username"=>"admin", "password"=>"admin"}}
+  [4;35;1mAccount Load (0.5ms)[0m   [0mSELECT * FROM "accounts" WHERE (username = 'admin') LIMIT 1[0m
+Redirected to http://localhost:3000/items
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/sessions/login]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-29 16:36:12) [GET]
+  [4;36;1mItem Load (0.6ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 100ms (View: 87, DB: 1) | 200 OK [http://localhost/items]
+
+
+Processing ItemsController#show (for 127.0.0.1 at 2017-08-29 16:36:17) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" WHERE ("items"."id" = 5) [0m
+Rendering template within layouts/items
+Rendering items/show
+  [4;36;1mReview Load (0.3ms)[0m   [0;1mSELECT * FROM "reviews" WHERE ("reviews".item_id = 5) [0m
+Completed in 116ms (View: 109, DB: 0) | 200 OK [http://localhost/items/5]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2017-08-29 16:36:20) [GET]
+  Parameters: {"id"=>"logout"}
+Redirected to http://localhost:3000/sessions
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/sessions/destroy/logout]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:36:20) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2017-08-29 16:36:25) [GET]
+Redirected to http://localhost:3000/sessions
+Filter chain halted as [:check_if_logged_in] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/items]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:36:25) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:36:54) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:37:56) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:41:34) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2017-08-29 16:41:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/user.ong" with {:method=>:get}):
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ajaybl/.rbenv/versions/1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:41:43) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:42:31) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:42:32) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:42:39) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:42:40) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:42:50) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:43:05) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:43:12) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:43:13) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:43:19) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:43:19) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:43:34) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:43:58) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:44:56) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#index (for 127.0.0.1 at 2017-08-29 16:44:57) [GET]
+Rendering template within layouts/sessions
+Rendering sessions/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
