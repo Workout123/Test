@@ -12,6 +12,7 @@ a {
     width: 20%;
     min-height: 800px;
     background: #cdd0d6;
+    padding-top: 20px;
   }
   #nav_home {
     padding-top: 10px;
@@ -23,6 +24,7 @@ a {
     float: left;
     width: 80%;
     min-height: 800px;
+    padding-top: 20px;
   }
 }
 
@@ -123,4 +125,23 @@ table.item_table {
 
 div.review_container {
   min-height: 150px;
+}
+
+div#head
+{
+  background: gray;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 20px;
+  text-align: right;
+}
+div#logout
+{
+  float: right;
+}
+div#username
+{
+  float:right;
 }

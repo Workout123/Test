@@ -4,9 +4,15 @@
 
   </head>
   <body>
+    <div id="head">
+      <% if session[:username] %>
+        <%= content_tag :div, session[:username].to_s , :id => "username" %>
+        <%= link_to "Logout :&nbsp", :controller => "sessions", :action => "destroy", :id => "logout" %>
+      <% end %>
+    </div>
     <p style="color: green"><%= notice %></p>
     <div id="nav">
-      <a href="/"> <div id="nav_home">Home</div> </a>
+      <a href="/items"> <div id="nav_home">Home</div> </a>
       <%= link_to "<div id='nav_back'>Back</div>", '', :onclick => "history.back()", :id => "nav_back"%>
     </div>
     <div id="rightcontainer">

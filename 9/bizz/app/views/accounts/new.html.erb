@@ -1,0 +1,9 @@
+
+<% form_for :accounts, @account, :url => { :action => "create" } do |f| %>
+    <h3>Create</h3>
+    <%= f.label :username %>
+    <%= f.text_field :username %><br/>
+    <%= f.label :password %>
+    <%= f.text_field :password %><br/>
+    <%= f.submit "Create Account" %>
+<% end %>

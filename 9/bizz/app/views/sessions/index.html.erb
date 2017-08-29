@@ -1,0 +1,7 @@
+<h3>Login</h3>
+<p style="color: red"><%= notice %></p>
+<% form_for :account, :url => { :action => "login" } do |f| %>
+  Username <%= f.text_field :username, :required => "true" %><br/><br/>
+  Password &nbsp<%= f.password_field :password%><br/><br/>
+  <%= f.submit "Login" %>
+<% end %>

@@ -1,5 +1,14 @@
 class ReviewsController < ApplicationController
   layout "items"
+  before_filter :check_if_logged_in
+
+  def check_if_logged_in
+    if session[:username].nil?
+      flash[:notice] = "Please login first"
+      redirect_to :controller => "sessions", :action => "index"
+    end
+  end
+
   def index
     @item = Item.find(params[:item_id])
     @reviews = @item.reviews
@@ -21,7 +30,7 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to item_reviews_path(@item)
     else
-      reder :action => "new"
+      render :action => "new"
     end
   end
 

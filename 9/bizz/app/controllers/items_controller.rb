@@ -1,5 +1,13 @@
 class ItemsController < ApplicationController
+  before_filter :check_if_logged_in
 
+  def check_if_logged_in
+    if session[:username].nil?
+      flash[:notice] = "Please login first"
+      redirect_to :controller => "sessions", :action => "index"
+    end
+  end
+  
   # GET /items
   # GET /items.xml
   def index
