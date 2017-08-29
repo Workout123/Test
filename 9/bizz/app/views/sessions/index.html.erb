@@ -1,9 +1,9 @@
 <div id="login-container">
-  <div style="color: red" id="notice"><%= notice %></div>
   <img id="login-user" src="/images/user.png"></img>
   <% form_for :account, :url => { :action => "login" } do |f| %>
     <div id="login-username" class="login-textbox"> <%= f.text_field :username, :required => "true", :class => "form-control", :placeholder => "Username"%> </div>
     <div id="login-password" class="login-textbox"> <%= f.password_field :password , :class => "form-control", :placeholder => "Password"%> </div>
-    <%= f.submit "Login", :class => "btn btn-primary btn-block", :id => "login-button"  %>
+      <div style="color: red" id="notice"><%= notice %></div>
+      <%= f.submit "Login", :class => "btn btn-primary btn-block", :id => "login-button"  %>
   <% end %>
 </div>
